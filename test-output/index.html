@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-EnviryaProjects" class="navigator-link ">
-                    <span>C:\Users\Lenovo\Downloads\Envirya Project\testng.xml</span>
+                    <span>E:\LOCAL_EnviryaProject\Envirya\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-EnviryaProjects">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserInvalidPassword(chrome)">EditUserInvalidPassword(chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="TestNoPassword(chrome)">TestNoPassword(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-EnviryaProjects -->
@@ -116,21 +116,6 @@
                       <a href="#" panel-name="suite-EnviryaProjects" class="show-methods passed suite-EnviryaProjects"> (show)</a> <!-- show-methods passed suite-EnviryaProjects -->
                     </span>
                     <div class="method-list-content passed suite-EnviryaProjects">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserInvalidConfirmPassword(chrome)">EditUserInvalidConfirmPassword(chrome)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserNoConfirmPassword(chrome)">EditUserNoConfirmPassword(chrome)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserNoPassword(chrome)">EditUserNoPassword(chrome)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="TestNoEmail(chrome)">TestNoEmail(chrome)</a> <!-- method navigator-link -->
@@ -156,30 +141,28 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EditUserInvalidPassword(chrome)">
-                  </a> <!-- EditUserInvalidPassword(chrome) -->
-                  <span class="method-name">EditUserInvalidPassword</span>
+                  <a name="TestNoPassword(chrome)">
+                  </a> <!-- TestNoPassword(chrome) -->
+                  <span class="method-name">TestNoPassword</span>
                   <span class="parameters">(chrome)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must contain a lowercase letter, uppercas&apos;)]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;LAPTOP-UISU80L1&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ba4ff7853a06db4a9c8aaf7e0eb08da2
-*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Password must contain a lowercase letter, uppercas&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: adacf4c73aa28453fb1f2f2615a18ba7
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at RBAC.CreateUser.EditUserInvalidPassword(CreateUser.java:332)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at config.PropertiesFile.createBrowser(PropertiesFile.java:42)
+	at RBAC.CreateUser.TestNoPassword(CreateUser.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -195,30 +178,6 @@ Session ID: ba4ff7853a06db4a9c8aaf7e0eb08da2
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EditUserInvalidConfirmPassword(chrome)">
-                  </a> <!-- EditUserInvalidConfirmPassword(chrome) -->
-                  <span class="method-name">EditUserInvalidConfirmPassword</span>
-                  <span class="parameters">(chrome)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="EditUserNoConfirmPassword(chrome)">
-                  </a> <!-- EditUserNoConfirmPassword(chrome) -->
-                  <span class="method-name">EditUserNoConfirmPassword</span>
-                  <span class="parameters">(chrome)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="EditUserNoPassword(chrome)">
-                  </a> <!-- EditUserNoPassword(chrome) -->
-                  <span class="method-name">EditUserNoPassword</span>
-                  <span class="parameters">(chrome)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TestNoEmail(chrome)">
                   </a> <!-- TestNoEmail(chrome) -->
                   <span class="method-name">TestNoEmail</span>
@@ -230,7 +189,7 @@ Session ID: ba4ff7853a06db4a9c8aaf7e0eb08da2
         </div> <!-- panel EnviryaProjects -->
         <div panel-name="test-xml-EnviryaProjects" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\Downloads\Envirya Project\testng.xml</span>
+            <span class="header-content">E:\LOCAL_EnviryaProject\Envirya\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -273,17 +232,17 @@ Session ID: ba4ff7853a06db4a9c8aaf7e0eb08da2
       &lt;class name=&quot;RBAC.CreateUser&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;TestNoEmail&quot;/&gt;
-          &lt;include name=&quot;EditUserNoPassword&quot;/&gt;
-          &lt;include name=&quot;EditUserNoConfirmPassword&quot;/&gt;
-          &lt;include name=&quot;EditUserInvalidPassword&quot;/&gt;
-          &lt;include name=&quot;EditUserInvalidConfirmPassword&quot;/&gt;
-          &lt;exclude name=&quot;TestNoPassword&quot;/&gt;
+          &lt;include name=&quot;TestNoPassword&quot;/&gt;
           &lt;exclude name=&quot;TestNoConfirmPassword&quot;/&gt;
           &lt;exclude name=&quot;TestInvalidEmail&quot;/&gt;
           &lt;exclude name=&quot;TestAlreadyExistsEmail&quot;/&gt;
           &lt;exclude name=&quot;TestInvalidPassword&quot;/&gt;
           &lt;exclude name=&quot;TestInvalidConfirmPassword&quot;/&gt;
           &lt;exclude name=&quot;TestValidUser&quot;/&gt;
+          &lt;exclude name=&quot;EditUserNoPassword&quot;/&gt;
+          &lt;exclude name=&quot;EditUserNoConfirmPassword&quot;/&gt;
+          &lt;exclude name=&quot;EditUserInvalidPassword&quot;/&gt;
+          &lt;exclude name=&quot;EditUserInvalidConfirmPassword&quot;/&gt;
           &lt;exclude name=&quot;EditUserValid&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- RBAC.CreateUser --&gt;
@@ -373,32 +332,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestNoEmail')
 data.setCell(0, 2, 'RBAC.CreateUser')
-data.setCell(0, 3, 33141);
+data.setCell(0, 3, 33314);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'EditUserInvalidConfirmPassword')
+data.setCell(1, 1, 'TestNoPassword')
 data.setCell(1, 2, 'RBAC.CreateUser')
-data.setCell(1, 3, 31207);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'EditUserNoConfirmPassword')
-data.setCell(2, 2, 'RBAC.CreateUser')
-data.setCell(2, 3, 31049);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'EditUserNoPassword')
-data.setCell(3, 2, 'RBAC.CreateUser')
-data.setCell(3, 3, 31037);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'EditUserInvalidPassword')
-data.setCell(4, 2, 'RBAC.CreateUser')
-data.setCell(4, 3, 27460);
+data.setCell(1, 3, 4069);
 window.suiteTableData['EnviryaProjects']= { tableData: data, tableDiv: 'times-div-EnviryaProjects'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-EnviryaProjects">
               </div> <!-- times-div-EnviryaProjects -->
             </div> <!-- times-div -->
@@ -413,7 +360,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-EnviryaProjects" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">21 ignored methods</span>
+            <span class="header-content">24 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -424,15 +371,38 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">RBAC.CreateRole</span>
+              <span class="ignored-class-name">RBAC.CreateUser</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">EditRoleValid</span>
+                <span class="ignored-method-name">TestInvalidEmail</span>
                 <br/>
-                <span class="ignored-method-name">EditRoleName</span>
+                <span class="ignored-method-name">EditUserInvalidPassword</span>
                 <br/>
-                <span class="ignored-method-name">EditRoleDescription</span>
+                <span class="ignored-method-name">TestInvalidConfirmPassword</span>
                 <br/>
-                <span class="ignored-method-name">EditRoleExists</span>
+                <span class="ignored-method-name">EditUserValid</span>
+                <br/>
+                <span class="ignored-method-name">EditUserNoConfirmPassword</span>
+                <br/>
+                <span class="ignored-method-name">TestNoConfirmPassword</span>
+                <br/>
+                <span class="ignored-method-name">EditUserNoPassword</span>
+                <br/>
+                <span class="ignored-method-name">TestValidUser</span>
+                <br/>
+                <span class="ignored-method-name">TestAlreadyExistsEmail</span>
+                <br/>
+                <span class="ignored-method-name">EditUserInvalidConfirmPassword</span>
+                <br/>
+                <span class="ignored-method-name">TestNoRole</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Template.Regex</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestEdit</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -454,32 +424,15 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Template.Regex</span>
+              <span class="ignored-class-name">RBAC.CreateRole</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestEdit</span>
+                <span class="ignored-method-name">EditRoleValid</span>
                 <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">RBAC.CreateUser</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestInvalidEmail</span>
+                <span class="ignored-method-name">EditRoleName</span>
                 <br/>
-                <span class="ignored-method-name">TestInvalidConfirmPassword</span>
+                <span class="ignored-method-name">EditRoleDescription</span>
                 <br/>
-                <span class="ignored-method-name">EditUserValid</span>
-                <br/>
-                <span class="ignored-method-name">TestNoPassword</span>
-                <br/>
-                <span class="ignored-method-name">TestNoConfirmPassword</span>
-                <br/>
-                <span class="ignored-method-name">TestValidUser</span>
-                <br/>
-                <span class="ignored-method-name">TestAlreadyExistsEmail</span>
-                <br/>
-                <span class="ignored-method-name">TestNoRole</span>
-                <br/>
-                <span class="ignored-method-name">TestInvalidPassword</span>
+                <span class="ignored-method-name">EditRoleExists</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -501,50 +454,38 @@ return data;
               <div class="chronological-class-name">RBAC.CreateRole</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">193 ms</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">RBAC.CreateUser</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">206 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TestNoEmail(chrome)</span>
-                <span class="method-start">233 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">EditUserNoPassword(chrome)</span>
-                <span class="method-start">33391 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">EditUserNoConfirmPassword(chrome)</span>
-                <span class="method-start">64435 ms</span>
+                <span class="method-start">94 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">EditUserInvalidPassword(chrome)</span>
-                <span class="method-start">95490 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">EditUserInvalidConfirmPassword(chrome)</span>
-                <span class="method-start">122958 ms</span>
+                <span class="method-name">TestNoPassword(chrome)</span>
+                <span class="method-start">33421 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Account.RegisterPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">154217 ms</span>
+                <span class="method-start">37531 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Template.Regex</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">154247 ms</span>
+                <span class="method-start">37544 ms</span>
               </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

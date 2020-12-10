@@ -5,7 +5,7 @@
     <classes>
       <class name="RBAC.CreateUser">
         <methods>
-          <include name="EditUserInvalidPassword" invocation-numbers="0"/>
+          <include name="TestNoPassword" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- RBAC.CreateUser -->

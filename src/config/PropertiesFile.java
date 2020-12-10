@@ -19,10 +19,10 @@ public class PropertiesFile
 	public void setUp() throws IOException
 	{
 		p= new Properties();
-		fi = new FileInputStream("C:\\Users\\Lenovo\\Downloads\\Envirya Project\\src\\config\\config.properties");
+		fi = new FileInputStream("E:\\LOCAL_EnviryaProject\\Envirya\\src\\config\\config.properties");
 	    p.load(fi);
-	    System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Downloads\\Envirya Project\\lib\\chromedriver.exe");
-	    System.setProperty("webdriver.gecko.driver", "C:\\Users\\Lenovo\\Downloads\\Envirya Project\\lib\\geckodriver.exe");
+	    System.setProperty("webdriver.chrome.driver","E:\\LOCAL_EnviryaProject\\Envirya\\lib\\chromedriver.exe");
+	    System.setProperty("webdriver.gecko.driver", "E:\\LOCAL_EnviryaProject\\Envirya\\lib\\geckodriver.exe");
     }
 
 	public WebDriver  createBrowser(String browser) throws InterruptedException

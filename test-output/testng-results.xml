@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="21" total="26" passed="4" failed="1" skipped="0">
+<testng-results ignored="24" total="26" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-10T14:56:35 IST" name="EnviryaProjects" finished-at="2020-12-10T14:59:09 IST" duration-ms="154255">
+  <suite started-at="2020-12-10T19:05:57 IST" name="EnviryaProjects" finished-at="2020-12-10T19:06:35 IST" duration-ms="37560">
     <groups>
     </groups>
-    <test started-at="2020-12-10T14:56:35 IST" name="Login Test" finished-at="2020-12-10T14:56:35 IST" duration-ms="24">
+    <test started-at="2020-12-10T19:05:57 IST" name="Login Test" finished-at="2020-12-10T19:05:57 IST" duration-ms="31">
       <class name="Account.LoginPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.LoginPage@13526e59]" started-at="2020-12-10T14:56:35 IST" name="setUp" finished-at="2020-12-10T14:56:35 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.LoginPage@4470fbd6]" started-at="2020-12-10T19:05:57 IST" name="setUp" finished-at="2020-12-10T19:05:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Account.LoginPage -->
     </test> <!-- Login Test -->
-    <test started-at="2020-12-10T14:56:35 IST" name="Create Role Test" finished-at="2020-12-10T14:56:35 IST" duration-ms="7">
+    <test started-at="2020-12-10T19:05:57 IST" name="Create Role Test" finished-at="2020-12-10T19:05:57 IST" duration-ms="0">
       <class name="RBAC.CreateRole">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateRole@18317edc]" started-at="2020-12-10T14:56:35 IST" name="setUp" finished-at="2020-12-10T14:56:35 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateRole@16612a51]" started-at="2020-12-10T19:05:57 IST" name="setUp" finished-at="2020-12-10T19:05:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- RBAC.CreateRole -->
     </test> <!-- Create Role Test -->
-    <test started-at="2020-12-10T14:56:35 IST" name="Create User Test" finished-at="2020-12-10T14:59:09 IST" duration-ms="153967">
+    <test started-at="2020-12-10T19:05:57 IST" name="Create User Test" finished-at="2020-12-10T19:06:34 IST" duration-ms="37417">
       <class name="RBAC.CreateUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateUser@1f760b47]" started-at="2020-12-10T14:56:35 IST" name="setUp" finished-at="2020-12-10T14:56:35 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateUser@536dbea0]" started-at="2020-12-10T19:05:57 IST" name="setUp" finished-at="2020-12-10T19:05:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TestNoEmail(java.lang.String)[pri:0, instance:RBAC.CreateUser@1f760b47]" started-at="2020-12-10T14:56:35 IST" name="TestNoEmail" data-provider="DataProvider" finished-at="2020-12-10T14:57:08 IST" duration-ms="33141" status="PASS">
+        <test-method signature="TestNoEmail(java.lang.String)[pri:0, instance:RBAC.CreateUser@536dbea0]" started-at="2020-12-10T19:05:57 IST" name="TestNoEmail" data-provider="DataProvider" finished-at="2020-12-10T19:06:30 IST" duration-ms="33314" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNoEmail -->
-        <test-method signature="EditUserNoPassword(java.lang.String)[pri:0, instance:RBAC.CreateUser@1f760b47]" started-at="2020-12-10T14:57:08 IST" name="EditUserNoPassword" data-provider="DataProvider" finished-at="2020-12-10T14:57:39 IST" duration-ms="31037" status="PASS">
+        <test-method signature="TestNoPassword(java.lang.String)[pri:0, instance:RBAC.CreateUser@536dbea0]" started-at="2020-12-10T19:06:30 IST" name="TestNoPassword" data-provider="DataProvider" finished-at="2020-12-10T19:06:34 IST" duration-ms="4069" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -46,50 +46,26 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditUserNoPassword -->
-        <test-method signature="EditUserNoConfirmPassword(java.lang.String)[pri:0, instance:RBAC.CreateUser@1f760b47]" started-at="2020-12-10T14:57:39 IST" name="EditUserNoConfirmPassword" data-provider="DataProvider" finished-at="2020-12-10T14:58:10 IST" duration-ms="31049" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditUserNoConfirmPassword -->
-        <test-method signature="EditUserInvalidPassword(java.lang.String)[pri:0, instance:RBAC.CreateUser@1f760b47]" started-at="2020-12-10T14:58:10 IST" name="EditUserInvalidPassword" data-provider="DataProvider" finished-at="2020-12-10T14:58:37 IST" duration-ms="27460" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Password must contain a lowercase letter, uppercas')]"}
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-UISU80L1', ip: '192.168.29.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ba4ff7853a06db4a9c8aaf7e0eb08da2
-*** Element info: {Using=xpath, value=//div[contains(text(),'Password must contain a lowercase letter, uppercas')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: adacf4c73aa28453fb1f2f2615a18ba7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Password must contain a lowercase letter, uppercas')]"}
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-UISU80L1', ip: '192.168.29.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ba4ff7853a06db4a9c8aaf7e0eb08da2
-*** Element info: {Using=xpath, value=//div[contains(text(),'Password must contain a lowercase letter, uppercas')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: adacf4c73aa28453fb1f2f2615a18ba7
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,11 +77,10 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at RBAC.CreateUser.EditUserInvalidPassword(CreateUser.java:332)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at config.PropertiesFile.createBrowser(PropertiesFile.java:42)
+at RBAC.CreateUser.TestNoPassword(CreateUser.java:77)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -136,34 +111,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditUserInvalidPassword -->
-        <test-method signature="EditUserInvalidConfirmPassword(java.lang.String)[pri:0, instance:RBAC.CreateUser@1f760b47]" started-at="2020-12-10T14:58:38 IST" name="EditUserInvalidConfirmPassword" data-provider="DataProvider" finished-at="2020-12-10T14:59:09 IST" duration-ms="31207" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditUserInvalidConfirmPassword -->
+        </test-method> <!-- TestNoPassword -->
       </class> <!-- RBAC.CreateUser -->
     </test> <!-- Create User Test -->
-    <test started-at="2020-12-10T14:59:09 IST" name="Register Test" finished-at="2020-12-10T14:59:09 IST" duration-ms="5">
+    <test started-at="2020-12-10T19:06:35 IST" name="Register Test" finished-at="2020-12-10T19:06:35 IST" duration-ms="5">
       <class name="Account.RegisterPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.RegisterPage@747f281]" started-at="2020-12-10T14:59:09 IST" name="setUp" finished-at="2020-12-10T14:59:09 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.RegisterPage@35b74c5c]" started-at="2020-12-10T19:06:35 IST" name="setUp" finished-at="2020-12-10T19:06:35 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Account.RegisterPage -->
     </test> <!-- Register Test -->
-    <test started-at="2020-12-10T14:59:09 IST" name="RegexTest" finished-at="2020-12-10T14:59:09 IST" duration-ms="2">
+    <test started-at="2020-12-10T19:06:35 IST" name="RegexTest" finished-at="2020-12-10T19:06:35 IST" duration-ms="0">
       <class name="Template.Regex">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Template.Regex@35a3d49f]" started-at="2020-12-10T14:59:09 IST" name="setUp" finished-at="2020-12-10T14:59:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Template.Regex@7de62196]" started-at="2020-12-10T19:06:35 IST" name="setUp" finished-at="2020-12-10T19:06:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
