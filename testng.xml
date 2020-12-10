@@ -46,10 +46,10 @@
       <exclude name="TestInvalidPassword"/>
       <exclude name="TestInvalidConfirmPassword"/>
       <exclude name="TestValidUser"/>
-      <include name="EditUserNoPassword"/>
-      <include name="EditUserNoConfirmPassword"/>
-      <include name="EditUserInvalidPassword"/>
-      <include name="EditUserInvalidConfirmPassword"/>
+      <exclude name="EditUserNoPassword"/>
+      <exclude name="EditUserNoConfirmPassword"/>
+      <exclude name="EditUserInvalidPassword"/>
+      <exclude name="EditUserInvalidConfirmPassword"/>
       <exclude name="EditUserValid"/>
       </methods>
     </class>
