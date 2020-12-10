@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-EnviryaProjects" class="navigator-link">
+              <span class="suite-name border-failed">EnviryaProjects</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-EnviryaProjects" class="navigator-link ">
+                    <span>C:\Users\Lenovo\Downloads\Envirya Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-EnviryaProjects" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-EnviryaProjects" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-EnviryaProjects" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-EnviryaProjects" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-EnviryaProjects" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-EnviryaProjects" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EnviryaProjects" class="hide-methods failed suite-EnviryaProjects"> (hide)</a> <!-- hide-methods failed suite-EnviryaProjects -->
+                      <a href="#" panel-name="suite-EnviryaProjects" class="show-methods failed suite-EnviryaProjects"> (show)</a> <!-- show-methods failed suite-EnviryaProjects -->
+                    </span>
+                    <div class="method-list-content failed suite-EnviryaProjects">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserInvalidPassword(chrome)">EditUserInvalidPassword(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EnviryaProjects -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EnviryaProjects" class="hide-methods passed suite-EnviryaProjects"> (hide)</a> <!-- hide-methods passed suite-EnviryaProjects -->
+                      <a href="#" panel-name="suite-EnviryaProjects" class="show-methods passed suite-EnviryaProjects"> (show)</a> <!-- show-methods passed suite-EnviryaProjects -->
+                    </span>
+                    <div class="method-list-content passed suite-EnviryaProjects">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserInvalidConfirmPassword(chrome)">EditUserInvalidConfirmPassword(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserNoConfirmPassword(chrome)">EditUserNoConfirmPassword(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="EditUserNoPassword(chrome)">EditUserNoPassword(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="TestNoEmail(chrome)">TestNoEmail(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EnviryaProjects -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EnviryaProjects" class="panel EnviryaProjects">
+          <div class="suite-EnviryaProjects-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">RBAC.CreateUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditUserInvalidPassword(chrome)">
+                  </a> <!-- EditUserInvalidPassword(chrome) -->
+                  <span class="method-name">EditUserInvalidPassword</span>
+                  <span class="parameters">(chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must contain a lowercase letter, uppercas&apos;)]&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LAPTOP-UISU80L1&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ba4ff7853a06db4a9c8aaf7e0eb08da2
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Password must contain a lowercase letter, uppercas&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at RBAC.CreateUser.EditUserInvalidPassword(CreateUser.java:332)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnviryaProjects-class-failed -->
+          <div class="suite-EnviryaProjects-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">RBAC.CreateUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditUserInvalidConfirmPassword(chrome)">
+                  </a> <!-- EditUserInvalidConfirmPassword(chrome) -->
+                  <span class="method-name">EditUserInvalidConfirmPassword</span>
+                  <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditUserNoConfirmPassword(chrome)">
+                  </a> <!-- EditUserNoConfirmPassword(chrome) -->
+                  <span class="method-name">EditUserNoConfirmPassword</span>
+                  <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditUserNoPassword(chrome)">
+                  </a> <!-- EditUserNoPassword(chrome) -->
+                  <span class="method-name">EditUserNoPassword</span>
+                  <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestNoEmail(chrome)">
+                  </a> <!-- TestNoEmail(chrome) -->
+                  <span class="method-name">TestNoEmail</span>
+                  <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnviryaProjects-class-passed -->
+        </div> <!-- panel EnviryaProjects -->
+        <div panel-name="test-xml-EnviryaProjects" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Lenovo\Downloads\Envirya Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;EnviryaProjects&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Account.LoginPage&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;TestLogin&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidEmail&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidPassword&quot;/&gt;
+          &lt;exclude name=&quot;TestNoEmail&quot;/&gt;
+          &lt;exclude name=&quot;TestNoPassword&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Account.LoginPage --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create Role Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;RBAC.CreateRole&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;TestValidRole&quot;/&gt;
+          &lt;exclude name=&quot;TestNoRoleName&quot;/&gt;
+          &lt;exclude name=&quot;TestNoRoleDescription&quot;/&gt;
+          &lt;exclude name=&quot;TestNoRoleResource&quot;/&gt;
+          &lt;exclude name=&quot;TestNoRoleAction&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidRole&quot;/&gt;
+          &lt;exclude name=&quot;EditRoleValid&quot;/&gt;
+          &lt;exclude name=&quot;EditRoleName&quot;/&gt;
+          &lt;exclude name=&quot;EditRoleDescription&quot;/&gt;
+          &lt;exclude name=&quot;EditRoleExists&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- RBAC.CreateRole --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Role Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create User Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;RBAC.CreateUser&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TestNoEmail&quot;/&gt;
+          &lt;include name=&quot;EditUserNoPassword&quot;/&gt;
+          &lt;include name=&quot;EditUserNoConfirmPassword&quot;/&gt;
+          &lt;include name=&quot;EditUserInvalidPassword&quot;/&gt;
+          &lt;include name=&quot;EditUserInvalidConfirmPassword&quot;/&gt;
+          &lt;exclude name=&quot;TestNoPassword&quot;/&gt;
+          &lt;exclude name=&quot;TestNoConfirmPassword&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidEmail&quot;/&gt;
+          &lt;exclude name=&quot;TestAlreadyExistsEmail&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidPassword&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidConfirmPassword&quot;/&gt;
+          &lt;exclude name=&quot;TestValidUser&quot;/&gt;
+          &lt;exclude name=&quot;EditUserValid&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- RBAC.CreateUser --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create User Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Register Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Account.RegisterPage&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;RegisterTest&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidEmail&quot;/&gt;
+          &lt;exclude name=&quot;TestNoEmail&quot;/&gt;
+          &lt;exclude name=&quot;TestNoPassword&quot;/&gt;
+          &lt;exclude name=&quot;TestPasswordMatch&quot;/&gt;
+          &lt;exclude name=&quot;TestPasswordPolicy&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Account.RegisterPage --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Register Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RegexTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Template.Regex&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;TestFNEmpty&quot;/&gt;
+          &lt;exclude name=&quot;TestAliasName&quot;/&gt;
+          &lt;exclude name=&quot;TestSampleValueEmpty&quot;/&gt;
+          &lt;exclude name=&quot;TestSampleInput&quot;/&gt;
+          &lt;exclude name=&quot;TestCharacterTypeAlphabet&quot;/&gt;
+          &lt;exclude name=&quot;TestCharacterTypeNumeric&quot;/&gt;
+          &lt;exclude name=&quot;TestCharacterTypeMixed&quot;/&gt;
+          &lt;exclude name=&quot;TestTestValueBlank&quot;/&gt;
+          &lt;exclude name=&quot;TestFinishError&quot;/&gt;
+          &lt;exclude name=&quot;TestInvalidTestValue&quot;/&gt;
+          &lt;exclude name=&quot;TestValidTestValue&quot;/&gt;
+          &lt;exclude name=&quot;TestRegex&quot;/&gt;
+          &lt;exclude name=&quot;TestEdit&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Template.Regex --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegexTest --&gt;
+&lt;/suite&gt; &lt;!-- EnviryaProjects --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EnviryaProjects" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EnviryaProjects</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create Role Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create User Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Register Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RegexTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EnviryaProjects" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EnviryaProjects</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EnviryaProjects" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EnviryaProjects</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EnviryaProjects');
+function tableData_EnviryaProjects() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestNoEmail')
+data.setCell(0, 2, 'RBAC.CreateUser')
+data.setCell(0, 3, 33141);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'EditUserInvalidConfirmPassword')
+data.setCell(1, 2, 'RBAC.CreateUser')
+data.setCell(1, 3, 31207);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'EditUserNoConfirmPassword')
+data.setCell(2, 2, 'RBAC.CreateUser')
+data.setCell(2, 3, 31049);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'EditUserNoPassword')
+data.setCell(3, 2, 'RBAC.CreateUser')
+data.setCell(3, 3, 31037);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'EditUserInvalidPassword')
+data.setCell(4, 2, 'RBAC.CreateUser')
+data.setCell(4, 3, 27460);
+window.suiteTableData['EnviryaProjects']= { tableData: data, tableDiv: 'times-div-EnviryaProjects'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-EnviryaProjects">
+              </div> <!-- times-div-EnviryaProjects -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EnviryaProjects" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EnviryaProjects</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EnviryaProjects" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">21 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Account.LoginPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestLogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">RBAC.CreateRole</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">EditRoleValid</span>
+                <br/>
+                <span class="ignored-method-name">EditRoleName</span>
+                <br/>
+                <span class="ignored-method-name">EditRoleDescription</span>
+                <br/>
+                <span class="ignored-method-name">EditRoleExists</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Account.RegisterPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestNoPassword</span>
+                <br/>
+                <span class="ignored-method-name">TestPasswordMatch</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidEmail</span>
+                <br/>
+                <span class="ignored-method-name">TestNoEmail</span>
+                <br/>
+                <span class="ignored-method-name">RegisterTest</span>
+                <br/>
+                <span class="ignored-method-name">TestPasswordPolicy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Template.Regex</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestEdit</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">RBAC.CreateUser</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestInvalidEmail</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidConfirmPassword</span>
+                <br/>
+                <span class="ignored-method-name">EditUserValid</span>
+                <br/>
+                <span class="ignored-method-name">TestNoPassword</span>
+                <br/>
+                <span class="ignored-method-name">TestNoConfirmPassword</span>
+                <br/>
+                <span class="ignored-method-name">TestValidUser</span>
+                <br/>
+                <span class="ignored-method-name">TestAlreadyExistsEmail</span>
+                <br/>
+                <span class="ignored-method-name">TestNoRole</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EnviryaProjects" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Account.LoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">RBAC.CreateRole</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">193 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">RBAC.CreateUser</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">206 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TestNoEmail(chrome)</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">EditUserNoPassword(chrome)</span>
+                <span class="method-start">33391 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">EditUserNoConfirmPassword(chrome)</span>
+                <span class="method-start">64435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">EditUserInvalidPassword(chrome)</span>
+                <span class="method-start">95490 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">EditUserInvalidConfirmPassword(chrome)</span>
+                <span class="method-start">122958 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Account.RegisterPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">154217 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Template.Regex</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">154247 ms</span>
+              </div> <!-- configuration-test before -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EnviryaProjects">
+  <test name="Login Test">
+   <classes>
+    <class name="Account.LoginPage">
+     <methods>
+      <exclude name="TestLogin"/>
+      <exclude name="TestInvalidEmail"/>
+      <exclude name="TestInvalidPassword"/>
+      <exclude name="TestNoEmail"/>
+      <exclude name="TestNoPassword"/>
+     </methods>
+    </class>
+   </classes>
+  </test>
+  
+  <test name = "Create Role Test">
+   <classes>
+     <class name="RBAC.CreateRole">
+      <methods>
+      <exclude name="TestValidRole"/>
+      <exclude name="TestNoRoleName"/>
+      <exclude name="TestNoRoleDescription"/>
+      <exclude name="TestNoRoleResource"/>
+      <exclude name="TestNoRoleAction"/>
+      <exclude name="TestInvalidRole"/>
+      <exclude name="EditRoleValid"/>
+      <exclude name="EditRoleName"/>
+      <exclude name="EditRoleDescription"/>
+      <exclude name="EditRoleExists"/>
+     </methods>
+    </class>
+    </classes>
+   </test>
+    
+   <test name = "Create User Test">
+    <classes>
+     <class name = "RBAC.CreateUser">
+      <methods>
+      <include name="TestNoEmail"/>
+      <exclude name="TestNoPassword"/>
+      <exclude name="TestNoConfirmPassword"/>
+      <exclude name="TestInvalidEmail"/>
+      <exclude name="TestAlreadyExistsEmail"/>
+      <exclude name="TestInvalidPassword"/>
+      <exclude name="TestInvalidConfirmPassword"/>
+      <exclude name="TestValidUser"/>
+      <include name="EditUserNoPassword"/>
+      <include name="EditUserNoConfirmPassword"/>
+      <include name="EditUserInvalidPassword"/>
+      <include name="EditUserInvalidConfirmPassword"/>
+      <exclude name="EditUserValid"/>
+      </methods>
+    </class>
+   </classes>
+  </test>
+
+  
+  
+  
+  <test name="Register Test">
+   <classes>
+    <class name="Account.RegisterPage">
+      <methods>
+      <exclude name="RegisterTest"/>
+      <exclude name="TestInvalidEmail"/>
+      <exclude name="TestNoEmail"/>
+      <exclude name="TestNoPassword"/>
+      <exclude name="TestPasswordMatch"/>
+      <exclude name="TestPasswordPolicy"/>
+     </methods>
+    </class>
+   </classes>
+  </test>
+  <test name="RegexTest">
+    <classes>  
+      <class name="Template.Regex">
+      <methods>
+      <exclude name="TestFNEmpty"/>
+      <exclude name="TestAliasName"/>
+      <exclude name="TestSampleValueEmpty"/>
+      <exclude name="TestSampleInput"/>
+      <exclude name="TestCharacterTypeAlphabet"/>
+      <exclude name="TestCharacterTypeNumeric"/>
+      <exclude name="TestCharacterTypeMixed"/>
+      <exclude name="TestTestValueBlank"/>
+      <exclude name="TestFinishError"/>
+      <exclude name="TestInvalidTestValue"/>
+      <exclude name="TestValidTestValue"/>
+      <exclude name="TestRegex"/>
+      <exclude name="TestEdit"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
