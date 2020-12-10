@@ -39,7 +39,7 @@
      <class name = "RBAC.CreateUser">
       <methods>
       <include name="TestNoEmail"/>
-      <exclude name="TestNoPassword"/>
+      <include name="TestNoPassword"/>
       <exclude name="TestNoConfirmPassword"/>
       <exclude name="TestInvalidEmail"/>
       <exclude name="TestAlreadyExistsEmail"/>
