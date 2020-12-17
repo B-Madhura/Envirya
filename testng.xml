@@ -39,9 +39,10 @@
     <classes>
      <class name = "RBAC.CreateUser">
       <methods>
-      <include name="TestNoEmail"/>
-      <include name="TestNoPassword"/>
+      <exclude name="TestNoEmail"/>
+      <exclude name="TestNoPassword"/>
       <exclude name="TestNoConfirmPassword"/>
+      <exclude name="TestNoRole"/>
       <exclude name="TestInvalidEmail"/>
       <exclude name="TestAlreadyExistsEmail"/>
       <exclude name="TestInvalidPassword"/>
@@ -57,6 +58,18 @@
    </classes>
   </test>
 
+
+ <test name="Document Category Test">
+   <classes>
+    <class name="Service.DocumentCategory">
+      <methods>
+      <exclude name="TestNoTitle"/>
+      <include name="TestValidTitle"/>
+      <exclude name="TestInvalidTitle"/>
+     </methods>
+    </class>
+   </classes>
+  </test>
   
   
   

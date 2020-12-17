@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RBAC.CreateRole">
+      <class name="Service.DocumentCategory">
         <methods>
-          <include name="EditRoleName" invocation-numbers="0"/>
+          <include name="TestValidTitle" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- RBAC.CreateRole -->
+      </class> <!-- Service.DocumentCategory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

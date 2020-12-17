@@ -47,10 +47,6 @@ public class CreateRole extends PropertiesFile {
 	    Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[@id='aade5fa0-f724-4c4d-9e34-3378643d3f52']")).click();
 		Thread.sleep(5000);
-		//driver.findElement(By.xpath(p.getProperty("EditRoleName"))).sendKeys(rolename);
-		//String getdescription = driver.findElement(By.xpath(p.getProperty("EditRoleDesc"))).getText();
-		//driver.findElement(By.xpath(p.getProperty("EditRoleDesc"))).sendKeys(getdescription);
-	   // driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
 	}
 	
 	
