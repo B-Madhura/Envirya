@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-EnviryaProjects" class="navigator-link">
-              <span class="suite-name border-failed">EnviryaProjects</span>
+              <span class="suite-name border-passed">EnviryaProjects</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-EnviryaProjects" class="navigator-link ">
-                    <span class="test-stats">6 tests</span>
+                    <span class="test-stats">7 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-EnviryaProjects" class="hide-methods failed suite-EnviryaProjects"> (hide)</a> <!-- hide-methods failed suite-EnviryaProjects -->
-                      <a href="#" panel-name="suite-EnviryaProjects" class="show-methods failed suite-EnviryaProjects"> (show)</a> <!-- show-methods failed suite-EnviryaProjects -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EnviryaProjects" class="hide-methods passed suite-EnviryaProjects"> (hide)</a> <!-- hide-methods passed suite-EnviryaProjects -->
+                      <a href="#" panel-name="suite-EnviryaProjects" class="show-methods passed suite-EnviryaProjects"> (show)</a> <!-- show-methods passed suite-EnviryaProjects -->
                     </span>
-                    <div class="method-list-content failed suite-EnviryaProjects">
+                    <div class="method-list-content passed suite-EnviryaProjects">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="Service.DocumentCategory" class="method navigator-link" hash-for-method="TestValidTitle(chrome)">TestValidTitle(chrome)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnviryaProjects" title="DataOutput_File.DataOutput" class="method navigator-link" hash-for-method="TestInvalidMapkey(chrome)">TestInvalidMapkey(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-EnviryaProjects -->
+                    </div> <!-- method-list-content passed suite-EnviryaProjects -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,45 +119,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-EnviryaProjects" class="panel EnviryaProjects">
-          <div class="suite-EnviryaProjects-class-failed">
+          <div class="suite-EnviryaProjects-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Service.DocumentCategory</span>
+              <img src="passed.png"/>
+              <span class="class-name">DataOutput_File.DataOutput</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestValidTitle(chrome)">
-                  </a> <!-- TestValidTitle(chrome) -->
-                  <span class="method-name">TestValidTitle</span>
+                  <a name="TestInvalidMapkey(chrome)">
+                  </a> <!-- TestInvalidMapkey(chrome) -->
+                  <span class="method-name">TestInvalidMapkey</span>
                   <span class="parameters">(chrome)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//P[@class=&apos;MuiTypography-root MuiTypography-body1&apos;][text()=&apos;Page Segmentation&apos;]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;LAPTOP-UISU80L1&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59008}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 886815dcf5063f25daf910f099a33eff
-*** Element info: {Using=xpath, value=//P[@class=&apos;MuiTypography-root MuiTypography-body1&apos;][text()=&apos;Page Segmentation&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Service.DocumentCategory.TestValidTitle(DocumentCategory.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-EnviryaProjects-class-failed -->
+          </div> <!-- suite-EnviryaProjects-class-passed -->
         </div> <!-- panel EnviryaProjects -->
         <div panel-name="test-xml-EnviryaProjects" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -225,13 +202,31 @@ Session ID: 886815dcf5063f25daf910f099a33eff
     &lt;classes&gt;
       &lt;class name=&quot;Service.DocumentCategory&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TestValidTitle&quot;/&gt;
           &lt;exclude name=&quot;TestNoTitle&quot;/&gt;
+          &lt;exclude name=&quot;TestValidTitle&quot;/&gt;
           &lt;exclude name=&quot;TestInvalidTitle&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Service.DocumentCategory --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Document Category Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Output Activity Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DataOutput_File.DataOutput&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TestInvalidMapkey&quot;/&gt;
+          &lt;exclude name=&quot;TestNofilename&quot;/&gt;
+          &lt;exclude name=&quot;TestValidfilename&quot;/&gt;
+          &lt;exclude name=&quot;TestNoMapkey&quot;/&gt;
+          &lt;exclude name=&quot;TestValidMapkey&quot;/&gt;
+          &lt;exclude name=&quot;TestUploadNoFile&quot;/&gt;
+          &lt;exclude name=&quot;TestUploadInvalidFile&quot;/&gt;
+          &lt;exclude name=&quot;TestUploadValidFile&quot;/&gt;
+          &lt;exclude name=&quot;TestUploadUniqueFile&quot;/&gt;
+          &lt;exclude name=&quot;TestUploadFiveFile&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- DataOutput_File.DataOutput --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Output Activity Test --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Register Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Account.RegisterPage&quot;&gt;
@@ -248,7 +243,7 @@ Session ID: 886815dcf5063f25daf910f099a33eff
   &lt;/test&gt; &lt;!-- Register Test --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;RegexTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Template.Regex&quot;&gt;
+      &lt;class name=&quot;Template_File.Regex&quot;&gt;
         &lt;methods&gt;
           &lt;exclude name=&quot;TestFNEmpty&quot;/&gt;
           &lt;exclude name=&quot;TestAliasName&quot;/&gt;
@@ -264,7 +259,7 @@ Session ID: 886815dcf5063f25daf910f099a33eff
           &lt;exclude name=&quot;TestRegex&quot;/&gt;
           &lt;exclude name=&quot;TestEdit&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Template.Regex --&gt;
+      &lt;/class&gt; &lt;!-- Template_File.Regex --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- RegexTest --&gt;
 &lt;/suite&gt; &lt;!-- EnviryaProjects --&gt;
@@ -288,6 +283,9 @@ Session ID: 886815dcf5063f25daf910f099a33eff
               </li>
               <li>
                 <span class="test-name">Document Category Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Output Activity Test (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Register Test (1 class)</span>
@@ -321,14 +319,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestValidTitle')
-data.setCell(0, 2, 'Service.DocumentCategory')
-data.setCell(0, 3, 47797);
+data.setCell(0, 1, 'TestInvalidMapkey')
+data.setCell(0, 2, 'DataOutput_File.DataOutput')
+data.setCell(0, 3, 131666);
 window.suiteTableData['EnviryaProjects']= { tableData: data, tableDiv: 'times-div-EnviryaProjects'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-EnviryaProjects">
               </div> <!-- times-div-EnviryaProjects -->
             </div> <!-- times-div -->
@@ -343,7 +341,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-EnviryaProjects" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">28 ignored methods</span>
+            <span class="header-content">56 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -354,9 +352,33 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Template.Regex</span>
+              <span class="ignored-class-name">Template_File.Regex</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestFinishError</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidTestValue</span>
+                <br/>
+                <span class="ignored-method-name">TestAliasName</span>
+                <br/>
+                <span class="ignored-method-name">TestFNEmpty</span>
+                <br/>
                 <span class="ignored-method-name">TestEdit</span>
+                <br/>
+                <span class="ignored-method-name">TestCharacterTypeAlphabet</span>
+                <br/>
+                <span class="ignored-method-name">TestSampleInput</span>
+                <br/>
+                <span class="ignored-method-name">TestSampleValueEmpty</span>
+                <br/>
+                <span class="ignored-method-name">TestTestValueBlank</span>
+                <br/>
+                <span class="ignored-method-name">TestCharacterTypeMixed</span>
+                <br/>
+                <span class="ignored-method-name">TestCharacterTypeNumeric</span>
+                <br/>
+                <span class="ignored-method-name">TestRegex</span>
+                <br/>
+                <span class="ignored-method-name">TestValidTestValue</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -378,24 +400,27 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Service.DocumentCategory</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestInvalidTitle</span>
-                <br/>
-                <span class="ignored-method-name">TestNoTitle</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">RBAC.CreateRole</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">EditRoleValid</span>
+                <br/>
+                <span class="ignored-method-name">TestNoRoleName</span>
                 <br/>
                 <span class="ignored-method-name">EditRoleName</span>
                 <br/>
                 <span class="ignored-method-name">EditRoleDescription</span>
                 <br/>
                 <span class="ignored-method-name">EditRoleExists</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidRole</span>
+                <br/>
+                <span class="ignored-method-name">TestValidRole</span>
+                <br/>
+                <span class="ignored-method-name">TestNoRoleDescription</span>
+                <br/>
+                <span class="ignored-method-name">TestNoRoleAction</span>
+                <br/>
+                <span class="ignored-method-name">TestNoRoleResource</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -432,6 +457,40 @@ return data;
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Service.DocumentCategory</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestValidTitle</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidTitle</span>
+                <br/>
+                <span class="ignored-method-name">TestNoTitle</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">DataOutput_File.DataOutput</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestNofilename</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadNoFile</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadInvalidFile</span>
+                <br/>
+                <span class="ignored-method-name">TestNoMapkey</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadValidFile</span>
+                <br/>
+                <span class="ignored-method-name">TestValidMapkey</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadFiveFile</span>
+                <br/>
+                <span class="ignored-method-name">TestValidfilename</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadUniqueFile</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-EnviryaProjects" class="panel">
@@ -450,41 +509,46 @@ return data;
               <div class="chronological-class-name">RBAC.CreateRole</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">92 ms</span>
+                <span class="method-start">81 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">RBAC.CreateUser</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">105 ms</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Service.DocumentCategory</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DataOutput_File.DataOutput</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">183 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TestValidTitle(chrome)</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-name">TestInvalidMapkey(chrome)</span>
+                <span class="method-start">242 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Account.RegisterPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">48018 ms</span>
+                <span class="method-start">131968 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Template.Regex</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Template_File.Regex</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">48051 ms</span>
+                <span class="method-start">132017 ms</span>
               </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

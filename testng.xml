@@ -15,7 +15,6 @@
    </classes>
   </test>
   
-  
   <test name = "Create Role Test">
    <classes>
      <class name="RBAC.CreateRole">
@@ -35,7 +34,7 @@
     </classes>
    </test>
      
-   <test name = "Create User Test">
+  <test name = "Create User Test">
     <classes>
      <class name = "RBAC.CreateUser">
       <methods>
@@ -58,20 +57,37 @@
    </classes>
   </test>
 
-
- <test name="Document Category Test">
+  <test name="Document Category Test">
    <classes>
     <class name="Service.DocumentCategory">
       <methods>
       <exclude name="TestNoTitle"/>
-      <include name="TestValidTitle"/>
+      <exclude name="TestValidTitle"/>
       <exclude name="TestInvalidTitle"/>
      </methods>
     </class>
    </classes>
-  </test>
+ </test>
   
-  
+ 
+  <test name="Output Activity Test">
+   <classes>
+    <class name="DataOutput_File.DataOutput">
+      <methods>
+      <exclude name="TestNofilename"/>
+      <exclude name="TestValidfilename"/>
+      <exclude name="TestNoMapkey"/>
+      <exclude name="TestValidMapkey"/>
+      <include name="TestInvalidMapkey"/>
+      <exclude name="TestUploadNoFile"/>
+      <exclude name="TestUploadInvalidFile"/>
+      <exclude name="TestUploadValidFile"/>
+      <exclude name="TestUploadUniqueFile"/>
+      <exclude name="TestUploadFiveFile"/>
+     </methods>
+    </class>
+   </classes>
+ </test> 
   
   <test name="Register Test">
    <classes>
@@ -89,7 +105,7 @@
   </test>
   <test name="RegexTest">
     <classes>  
-      <class name="Template.Regex">
+      <class name="Template_File.Regex">
       <methods>
       <exclude name="TestFNEmpty"/>
       <exclude name="TestAliasName"/>

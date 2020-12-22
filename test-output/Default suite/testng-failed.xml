@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Service.DocumentCategory">
+      <class name="DataOutput_File.DataOutput">
         <methods>
-          <include name="TestValidTitle" invocation-numbers="0"/>
+          <include name="TestValidFileMapkey" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Service.DocumentCategory -->
+      </class> <!-- DataOutput_File.DataOutput -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

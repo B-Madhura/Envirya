@@ -50,7 +50,7 @@ public class CreateRole extends PropertiesFile {
 	}
 	
 	
-	/*@Test(dataProvider="DataProvider")
+	@Test(dataProvider="DataProvider")
 	public void TestValidRole(String browser) throws InterruptedException 
 	{	 
 		String username ="madhura@envirya.in";
@@ -167,7 +167,7 @@ public class CreateRole extends PropertiesFile {
 	    role(driver,rolename,description);
 	    resource(driver);
 	    driver.quit();
-	}*/
+	}
 	
     /* ===================================================================================================== */
 	

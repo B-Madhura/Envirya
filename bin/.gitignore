@@ -1,7 +1,14 @@
+/Account/
+/CP_QualityCheck/
+/CP_QualityValidation/
+/DataOutput/
 /DataOutput_File/
 /DataSource_File/
+/OCR/
 /OCR_File/
 /Process_File/
 /QualityCheck_File/
+/RBAC/
+/Service/
 /Template_File/
-/Template/
+/config/

@@ -14,7 +14,7 @@ public class Process extends PropertiesFile
 {
 	public static void CreateProcess(WebDriver driver,String processname) throws InterruptedException
 	{   
-		driver.findElement(By.xpath(p.getProperty("CreateProcess"))).click();
+		//driver.findElement(By.xpath(p.getProperty("CreateProcess"))).click();
 		Thread.sleep(3000);
 		String pageTitle = driver.getTitle();
 		System.out.println("The title of the page is - " +pageTitle);
@@ -33,7 +33,7 @@ public class Process extends PropertiesFile
     	String processname = UUID.randomUUID().toString(); 
     	WebDriver driver = createBrowser(browser);		
 		LoginPage.login(driver, username, password, false);
-		Process.CreateProcess(driver,processname);
+		CreateProcess(driver,processname);
 		Thread.sleep(2000);
 		driver.quit();
 	}	
@@ -45,7 +45,7 @@ public class Process extends PropertiesFile
     	String processname = "";
     	WebDriver driver = createBrowser(browser);		
 		LoginPage.login(driver, username, password, false);
-		Process.CreateProcess(driver,processname);
+		CreateProcess(driver,processname);
         driver.findElement(By.xpath(p.getProperty("createTemplate"))).click();
         Thread.sleep(5000);
         Assert.assertEquals("Enter process name first",driver.findElement(By.xpath("//body/div[@id='root']/div[3]/div[1]/div[1]")).getText());
