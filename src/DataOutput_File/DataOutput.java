@@ -134,7 +134,6 @@ public class DataOutput extends PropertiesFile{
 		WebDriver driver = createBrowser(browser);	
 		TestValidDataOutput(driver);
 		Thread.sleep(3000);
-		 
         driver.findElement(By.xpath(p.getProperty("OutputFile"))).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath(p.getProperty("FileName"))).sendKeys("TestFile");
