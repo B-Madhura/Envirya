@@ -5,15 +5,14 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.util.List;
 import java.util.UUID;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -35,14 +34,32 @@ public class DataOutput extends PropertiesFile{
 		LoginPage.login(driver, username, password, false);
 		Process.CreateProcess(driver,processname);
 		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[contains(text(),'Create process')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//div[contains(text(),'Next Activity')]")).click();
+		driver.findElement(By.xpath("//div[contains(text(),'Template')]")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath(p.getProperty("uploadTemplate1"))).click();
         Thread.sleep(3000);
+        driver.findElement(By.xpath(p.getProperty("SelectTemplate"))).sendKeys("de");
+        Thread.sleep(3000);
         
-        Robot robot = new Robot();
+        List<WebElement> options =driver.findElements(By.xpath("//LI[@id='combo-box-demo-option-0']"));
+    	for(WebElement option :options){
+    		if(option.getText().equalsIgnoreCase("demo")){
+    	     option.click();  
+	         }
+    	}
+    	Thread.sleep(3000);
+    	driver.findElement(By.xpath(p.getProperty("SaveTemp2"))).click();
+        
+        
+        
+       /* Robot robot = new Robot();
         driver.findElement(By.xpath(p.getProperty("UploadTempFile"))).click();
         robot.setAutoDelay(2000);
         
-        StringSelection selection = new StringSelection("E:\\Madhura\\ENVIRYA PROJECTS\\Test 2.pdf");
+        StringSelection selection = new StringSelection("E:\\ENVIRYA PROJECTS\\PDF.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
         
         robot.setAutoDelay(1000);
@@ -55,22 +72,26 @@ public class DataOutput extends PropertiesFile{
         robot.setAutoDelay(1000);
  
         robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);*/
+       
         
-        Select FileType=new Select(driver.findElement(By.xpath("//select[@id='bucket']")));
-        FileType.selectByVisibleText("general");
+        /*Select FileType=new Select(driver.findElement(By.xpath(p.getProperty("FileType"))));
+        FileType.selectByVisibleText("System Generated Pdf");
         Thread.sleep(3000);
+        
         driver.findElement(By.xpath(p.getProperty("TemplateSubmit"))).click();
         Thread.sleep(5000);
         driver.findElement(By.xpath(p.getProperty("CreateTemplate"))).click();
 	    Thread.sleep(3000);
 	    Thread.sleep(5000);
 	    Thread.sleep(5000);
-	    Thread.sleep(5000);
+	    Thread.sleep(5000);*/
+	    
 	   //Click on close icon
-	    driver.findElement(By.cssSelector("body > div:nth-child(13) > div.MuiDialog-container.MuiDialog-scrollPaper > div > header > div > button > span.MuiIconButton-label > svg")).click();
-	    driver.findElement(By.xpath(p.getProperty("TempName"))).sendKeys("Temp11");
-	    //Thread.sleep(3000);
+	   //driver.findElement(By.cssSelector("body > div:nth-child(13) > div.MuiDialog-container.MuiDialog-scrollPaper > div > header > div > button > span.MuiIconButton-label > svg")).click();
+	    
+	    /*driver.findElement(By.xpath(p.getProperty("TempName"))).sendKeys("Temp11");
+	  
 	    driver.findElement(By.xpath(p.getProperty("ConfirmTemp"))).click();
 	    Thread.sleep(3000);
 	    
@@ -83,18 +104,20 @@ public class DataOutput extends PropertiesFile{
 	    WebElement element= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//header/div[1]/button[1]/span[1]/*[1]")));
         element.click();	   
         Thread.sleep(3000);
-	    driver.findElement(By.xpath(p.getProperty("NextActivity"))).click();
+	    driver.findElement(By.xpath(p.getProperty("NextActivity"))).click();*/
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath(p.getProperty("DataSource"))).click();
 	    Thread.sleep(3000);
 	    driver.findElement(By.xpath(p.getProperty("SelectSource"))).click();
 	    Thread.sleep(3000);
 	    
-	    Select DropSelect=new Select(driver.findElement(By.xpath(p.getProperty("DropSelect"))));
-	    DropSelect.selectByVisibleText("Zip");
+	   /* Select DropSelect=new Select(driver.findElement(By.xpath(p.getProperty("DropSelect"))));
+	    DropSelect.selectByVisibleText("Zip");*/
 	    Thread.sleep(3000);
 	    
-	    driver.findElement(By.xpath(p.getProperty("FileSave"))).click();
+	    WebElement element = driver.findElement(By.xpath(p.getProperty("FileSave")));
+	    Actions action = new Actions(driver);
+	    action.moveToElement(element).click().perform();
 	    Thread.sleep(3000);
 	    
 	    driver.findElement(By.xpath(p.getProperty("SaveData"))).click();
@@ -124,8 +147,7 @@ public class DataOutput extends PropertiesFile{
        
 		Assert.assertEquals("Please enter filename.", driver.findElement(By.xpath("//div[contains(text(),'Please enter filename.')]")).getText());
 		System.out.println("Test Passed- Blank File name");
-    	driver.quit();
-    	          
+    	driver.quit();         
 	}
 	
 	@Test(dataProvider="DataProvider")
@@ -177,12 +199,13 @@ public class DataOutput extends PropertiesFile{
         DataAlignment.selectByValue("horizontal");
         Thread.sleep(3000);
         driver.findElement(By.xpath(p.getProperty("MapKeys"))).click();
-        driver.findElement(By.xpath(p.getProperty("ChooseFile"))).sendKeys("E:\\Madhura\\ENVIRYA PROJECTS\\f111.xlsx");
+        driver.findElement(By.xpath(p.getProperty("ChooseFile"))).sendKeys("E:\\ENVIRYA PROJECTS\\f111.xlsx");
         Thread.sleep(3000);
         driver.findElement(By.xpath(p.getProperty("MapButton"))).click();
         driver.findElement(By.xpath("//tbody/tr[4]/td[2]")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//body/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/button[1]")).click();
+        
         driver.findElement(By.xpath("//tbody/tr[2]/td[2]")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath(p.getProperty("SaveMapKeys"))).click();
@@ -200,7 +223,7 @@ public class DataOutput extends PropertiesFile{
         Thread.sleep(3000);
        
         driver.findElement(By.xpath(p.getProperty("MapKeys"))).click();
-        driver.findElement(By.xpath(p.getProperty("ChooseFile"))).sendKeys("E:\\Madhura\\ENVIRYA PROJECTS\\f111.xlsx");
+        driver.findElement(By.xpath(p.getProperty("ChooseFile"))).sendKeys("E:\\ENVIRYA PROJECTS\\f111.xlsx");
         Thread.sleep(3000);
         driver.findElement(By.xpath(p.getProperty("MapButton"))).click();
         driver.findElement(By.xpath("//tbody/tr[4]/td[2]")).click();
@@ -238,7 +261,7 @@ public class DataOutput extends PropertiesFile{
         driver.findElement(By.xpath(p.getProperty("UploadTestFilesBtn"))).click();
         robot1.setAutoDelay(2000);
         
-        StringSelection selection = new StringSelection("E:\\Madhura\\ENVIRYA PROJECTS\\f111.xlsx");
+        StringSelection selection = new StringSelection("E:\\ENVIRYA PROJECTS\\f111.xlsx");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
         
         robot1.setAutoDelay(1000);
@@ -263,7 +286,7 @@ public class DataOutput extends PropertiesFile{
 	@Test(dataProvider="DataProvider")
 	public void TestUploadUniqueFile(String browser) throws InterruptedException, AWTException
 	{
-		String files=" \"E:\\Madhura\\ENVIRYA PROJECTS\\Test 1.pdf\"" +" "+"\"E:\\Madhura\\ENVIRYA PROJECTS\\Test 2.pdf\" ";
+		String files=" \"E:\\ENVIRYA PROJECTS\\Test 1.pdf\"" +" "+"\"E:\\ENVIRYA PROJECTS\\Test 2.pdf\" ";
 		WebDriver driver = createBrowser(browser);	
 		TestValidDataOutput(driver);
 		Thread.sleep(3000);
@@ -295,7 +318,7 @@ public class DataOutput extends PropertiesFile{
         driver.findElement(By.xpath(p.getProperty("UploadTestFilesBtn"))).click();
         robot2.setAutoDelay(2000);
     
-        StringSelection selection1 = new StringSelection("E:\\Madhura\\ENVIRYA PROJECTS\\Test 1.pdf");
+        StringSelection selection1 = new StringSelection("E:\\ENVIRYA PROJECTS\\Test 1.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection1, null);
         
         robot2.setAutoDelay(1000);
@@ -324,7 +347,7 @@ public class DataOutput extends PropertiesFile{
 	@Test(dataProvider="DataProvider")
 	public void TestUploadFiveFile(String browser) throws InterruptedException, AWTException
 	{
-		String files=" \"E:\\Madhura\\ENVIRYA PROJECTS\\Test 1.pdf\"" +" "+"\"E:\\Madhura\\ENVIRYA PROJECTS\\Test 2.pdf\" "+"\"E:\\Madhura\\ENVIRYA PROJECTS\\Test 3.pdf\" "+"\"E:\\Madhura\\ENVIRYA PROJECTS\\Test 4.pdf\" "+"\"E:\\Madhura\\ENVIRYA PROJECTS\\Test 5.pdf\" "+"\"E:\\Madhura\\ENVIRYA PROJECTS\\Test 6.pdf\" ";
+		String files=" \"E:\\ENVIRYA PROJECTS\\Test 1.pdf\"" +" "+"\"E:\\ENVIRYA PROJECTS\\Test 2.pdf\" "+"\"E:\\ENVIRYA PROJECTS\\Test 3.pdf\" "+"\"E:\\ENVIRYA PROJECTS\\Test 4.pdf\" "+"\"E:\\ENVIRYA PROJECTS\\Test 5.pdf\" "+"\"E:\\ENVIRYA PROJECTS\\Test 6.pdf\" ";
 		WebDriver driver = createBrowser(browser);	
 		TestValidDataOutput(driver);
 		Thread.sleep(3000);
@@ -372,7 +395,7 @@ public class DataOutput extends PropertiesFile{
         driver.findElement(By.xpath(p.getProperty("UploadTestFilesBtn"))).click();
         robot1.setAutoDelay(2000);
         
-        StringSelection selection = new StringSelection("E:\\Madhura\\ENVIRYA PROJECTS\\Test 1.pdf");
+        StringSelection selection = new StringSelection("E:\\ENVIRYA PROJECTS\\Test 1.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
         
         robot1.setAutoDelay(1000);

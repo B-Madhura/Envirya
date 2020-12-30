@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [EnviryaProjects]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Output Activity Test(failed)">
+  <test thread-count="5" name="QV Login Test(failed)">
     <classes>
-      <class name="DataOutput_File.DataOutput">
+      <class name="CP_QualityValidation.QV_QualityValidation">
         <methods>
+          <include name="QV_TestApproved" invocation-numbers="0"/>
+          <include name="QV_TestRejected" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="TestUploadUniqueFile" invocation-numbers="0"/>
         </methods>
-      </class> <!-- DataOutput_File.DataOutput -->
+      </class> <!-- CP_QualityValidation.QV_QualityValidation -->
     </classes>
-  </test> <!-- Output Activity Test(failed) -->
+  </test> <!-- QV Login Test(failed) -->
 </suite> <!-- Failed suite [EnviryaProjects] -->

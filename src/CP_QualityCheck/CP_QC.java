@@ -11,7 +11,7 @@ import config.PropertiesFile;
 public class CP_QC extends PropertiesFile
 
 {
-	@Test(dataProvider="SearchProvider32")
+	@Test(dataProvider="DataProvider")
 	public void verifyLogin(String Type ,String username , String password) throws InterruptedException
 	{
 		String pageTitle = driver.getTitle();
@@ -57,16 +57,5 @@ public class CP_QC extends PropertiesFile
 		System.out.println(driver.findElement(By.xpath("//div[contains(text(),'Successfully verified quality check data')]")).getText());
 		Thread.sleep(3000);
   }
-	
-	@DataProvider(name="SearchProvider32")
-	public Object[][] getDataFromDataprovider()
-	{
-	return new Object[][]
-			{
-		     
-		{"CP_QC","roohiqc@envirya.in","Yaali@1421"},
-		
-			};
-	}
 }
 	

@@ -78,7 +78,7 @@
       <exclude name="TestValidfilename"/>
       <exclude name="TestNoMapkey"/>
       <exclude name="TestValidMapkey"/>
-      <include name="TestInvalidMapkey"/>
+      <exclude name="TestInvalidMapkey"/>
       <exclude name="TestUploadNoFile"/>
       <exclude name="TestUploadInvalidFile"/>
       <exclude name="TestUploadValidFile"/>
@@ -89,6 +89,45 @@
    </classes>
  </test> 
   
+ <test name="Quality Check Test">
+   <classes>
+    <class name="QualityCheck_File.QualityCheck">
+      <methods>
+      <exclude name="TestNoQC"/>
+      <exclude name="TestNoQV"/>
+      <exclude name="TestValidQC"/>
+      <exclude name="TestValidQV"/>
+      <exclude name="TestValidQCQV"/>
+     </methods>
+    </class>
+   </classes>
+ </test>
+  
+  <test name="QC Login Test">
+   <classes>
+    <class name="CP_QualityCheck.QC_QualityCheck">
+      <methods>
+      <exclude name="QC_TestNoUpdate"/>
+      <exclude name="QC_TestUpdate"/>
+      <exclude name="QC_TestVerify"/>
+     </methods>
+    </class>
+   </classes>
+ </test>
+  
+  <test name="QV Login Test">
+   <classes>
+    <class name="CP_QualityValidation.QV_QualityValidation">
+      <methods>
+      <exclude name="QV_TestNoUpdate"/>
+      <exclude name="QV_TestUpdate"/>
+      <include name="QV_TestApproved"/>
+      <include name="QV_TestRejected"/>
+     </methods>
+    </class>
+   </classes>
+ </test>
+ 
   <test name="Register Test">
    <classes>
     <class name="Account.RegisterPage">
