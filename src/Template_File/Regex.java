@@ -466,7 +466,7 @@ public class Regex extends PropertiesFile
     	WebDriver driver = createBrowser(browser);
 		LoginPage.login(driver, username, password, false);
     	CreateProcess.Processcreation(driver);
-		Template.UploadTemplateFile(driver, DocumentCategory,Language, filetype,  individualORcorporate);
+		Template.UploadTemplateFile(driver, null, DocumentCategory,Language, filetype,  individualORcorporate);
 		Edit( driver, TempName, FieldName, AliasName);
 		AddFormat(driver,SampleValue);
 		MixedType(driver,BlockType,NumChar,CharType);
