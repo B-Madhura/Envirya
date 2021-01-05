@@ -52,8 +52,6 @@ public class DataOutput extends PropertiesFile{
 	
 	 public static void DataFileSave(WebDriver driver) throws InterruptedException
 	 {
-		 
-	    
 	    WebElement element = driver.findElement(By.xpath(p.getProperty("FileSave")));
 	    Actions action = new Actions(driver);
 	    action.moveToElement(element).click().perform();
