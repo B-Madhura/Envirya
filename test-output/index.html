@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-EnviryaProjects" class="navigator-link">
-              <span class="suite-name border-failed">EnviryaProjects</span>
+              <span class="suite-name border-passed">EnviryaProjects</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-EnviryaProjects" class="navigator-link ">
-                    <span class="test-stats">10 tests</span>
+                    <span class="test-stats">14 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-EnviryaProjects" class="hide-methods failed suite-EnviryaProjects"> (hide)</a> <!-- hide-methods failed suite-EnviryaProjects -->
-                      <a href="#" panel-name="suite-EnviryaProjects" class="show-methods failed suite-EnviryaProjects"> (show)</a> <!-- show-methods failed suite-EnviryaProjects -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EnviryaProjects" class="hide-methods passed suite-EnviryaProjects"> (hide)</a> <!-- hide-methods passed suite-EnviryaProjects -->
+                      <a href="#" panel-name="suite-EnviryaProjects" class="show-methods passed suite-EnviryaProjects"> (show)</a> <!-- show-methods passed suite-EnviryaProjects -->
                     </span>
-                    <div class="method-list-content failed suite-EnviryaProjects">
+                    <div class="method-list-content passed suite-EnviryaProjects">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="CP_QualityValidation.QV_QualityValidation" class="method navigator-link" hash-for-method="QV_TestApproved(chrome)">QV_TestApproved(chrome)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnviryaProjects" title="Service.DocumentCategory" class="method navigator-link" hash-for-method="TestValidTitle(chrome)">TestValidTitle(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="CP_QualityValidation.QV_QualityValidation" class="method navigator-link" hash-for-method="QV_TestRejected(chrome)">QV_TestRejected(chrome)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-EnviryaProjects -->
+                    </div> <!-- method-list-content passed suite-EnviryaProjects -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,78 +119,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-EnviryaProjects" class="panel EnviryaProjects">
-          <div class="suite-EnviryaProjects-class-failed">
+          <div class="suite-EnviryaProjects-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">CP_QualityValidation.QV_QualityValidation</span>
+              <img src="passed.png"/>
+              <span class="class-name">Service.DocumentCategory</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="QV_TestApproved(chrome)">
-                  </a> <!-- QV_TestApproved(chrome) -->
-                  <span class="method-name">QV_TestApproved</span>
+                  <a name="TestValidTitle(chrome)">
+                  </a> <!-- TestValidTitle(chrome) -->
+                  <span class="method-name">TestValidTitle</span>
                   <span class="parameters">(chrome)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Validate&apos;)]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;LAPTOP-UISU80L1&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 697d179f298a8a33ca19c8e69a9a01bd
-*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Validate&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at CP_QualityValidation.QV_QualityValidation.QualityValidation(QV_QualityValidation.java:23)
-	at CP_QualityValidation.QV_QualityValidation.QV_TestApproved(QV_QualityValidation.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="QV_TestRejected(chrome)">
-                  </a> <!-- QV_TestRejected(chrome) -->
-                  <span class="method-name">QV_TestRejected</span>
-                  <span class="parameters">(chrome)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Validate&apos;)]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;LAPTOP-UISU80L1&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f74a5bc4f95f166a8e81b313e5a7981a
-*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Validate&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at CP_QualityValidation.QV_QualityValidation.QualityValidation(QV_QualityValidation.java:23)
-	at CP_QualityValidation.QV_QualityValidation.QV_TestRejected(QV_QualityValidation.java:76)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-EnviryaProjects-class-failed -->
+          </div> <!-- suite-EnviryaProjects-class-passed -->
         </div> <!-- panel EnviryaProjects -->
         <div panel-name="test-xml-EnviryaProjects" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -263,8 +202,8 @@ Session ID: f74a5bc4f95f166a8e81b313e5a7981a
     &lt;classes&gt;
       &lt;class name=&quot;Service.DocumentCategory&quot;&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;TestValidTitle&quot;/&gt;
           &lt;exclude name=&quot;TestNoTitle&quot;/&gt;
-          &lt;exclude name=&quot;TestValidTitle&quot;/&gt;
           &lt;exclude name=&quot;TestInvalidTitle&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Service.DocumentCategory --&gt;
@@ -308,6 +247,7 @@ Session ID: f74a5bc4f95f166a8e81b313e5a7981a
           &lt;exclude name=&quot;QC_TestNoUpdate&quot;/&gt;
           &lt;exclude name=&quot;QC_TestUpdate&quot;/&gt;
           &lt;exclude name=&quot;QC_TestVerify&quot;/&gt;
+          &lt;exclude name=&quot;QC_TestViewLogs&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- CP_QualityCheck.QC_QualityCheck --&gt;
     &lt;/classes&gt;
@@ -316,10 +256,11 @@ Session ID: f74a5bc4f95f166a8e81b313e5a7981a
     &lt;classes&gt;
       &lt;class name=&quot;CP_QualityValidation.QV_QualityValidation&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;QV_TestApproved&quot;/&gt;
-          &lt;include name=&quot;QV_TestRejected&quot;/&gt;
           &lt;exclude name=&quot;QV_TestNoUpdate&quot;/&gt;
           &lt;exclude name=&quot;QV_TestUpdate&quot;/&gt;
+          &lt;exclude name=&quot;QV_TestApproved&quot;/&gt;
+          &lt;exclude name=&quot;QV_TestRejected&quot;/&gt;
+          &lt;exclude name=&quot;QV_TestViewLogs&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- CP_QualityValidation.QV_QualityValidation --&gt;
     &lt;/classes&gt;
@@ -359,6 +300,45 @@ Session ID: f74a5bc4f95f166a8e81b313e5a7981a
       &lt;/class&gt; &lt;!-- Template_File.Regex --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- RegexTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NoTemplateNameTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Template_File.NoTemplateName&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;verifyNoTemplateName&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Template_File.NoTemplateName --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NoTemplateNameTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NoTemplateUploadTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Template_File.NoTemplateUpload&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;verifyNoTemplateUpload&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Template_File.NoTemplateUpload --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NoTemplateUploadTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TemplateTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Template_File.Template&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;TestValidUploadTemp&quot;/&gt;
+          &lt;exclude name=&quot;TestUploadTempBlank&quot;/&gt;
+          &lt;exclude name=&quot;TestUploadTempFileBlank&quot;/&gt;
+          &lt;exclude name=&quot;TestTempNameBlank&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Template_File.Template --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TemplateTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UploadTemplateBlankTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Template_File.UploadTemplateBlank&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;verifyUploadTemplateBlank&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Template_File.UploadTemplateBlank --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UploadTemplateBlankTest --&gt;
 &lt;/suite&gt; &lt;!-- EnviryaProjects --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -399,6 +379,18 @@ Session ID: f74a5bc4f95f166a8e81b313e5a7981a
               <li>
                 <span class="test-name">RegexTest (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">NoTemplateNameTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">NoTemplateUploadTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TemplateTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">UploadTemplateBlankTest (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -423,20 +415,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'QV_TestApproved')
-data.setCell(0, 2, 'CP_QualityValidation.QV_QualityValidation')
-data.setCell(0, 3, 23706);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'QV_TestRejected')
-data.setCell(1, 2, 'CP_QualityValidation.QV_QualityValidation')
-data.setCell(1, 3, 22866);
+data.setCell(0, 1, 'TestValidTitle')
+data.setCell(0, 2, 'Service.DocumentCategory')
+data.setCell(0, 3, 58121);
 window.suiteTableData['EnviryaProjects']= { tableData: data, tableDiv: 'times-div-EnviryaProjects'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
               <div id="times-div-EnviryaProjects">
               </div> <!-- times-div-EnviryaProjects -->
             </div> <!-- times-div -->
@@ -451,7 +439,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-EnviryaProjects" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">67 ignored methods</span>
+            <span class="header-content">65 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -462,73 +450,29 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Template_File.Regex</span>
+              <span class="ignored-class-name">Template_File.UploadTemplateBlank</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestFinishError</span>
-                <br/>
-                <span class="ignored-method-name">TestInvalidTestValue</span>
-                <br/>
-                <span class="ignored-method-name">TestAliasName</span>
-                <br/>
-                <span class="ignored-method-name">TestFNEmpty</span>
-                <br/>
-                <span class="ignored-method-name">TestEdit</span>
-                <br/>
-                <span class="ignored-method-name">TestCharacterTypeAlphabet</span>
-                <br/>
-                <span class="ignored-method-name">TestSampleInput</span>
-                <br/>
-                <span class="ignored-method-name">TestSampleValueEmpty</span>
-                <br/>
-                <span class="ignored-method-name">TestTestValueBlank</span>
-                <br/>
-                <span class="ignored-method-name">TestCharacterTypeMixed</span>
-                <br/>
-                <span class="ignored-method-name">TestCharacterTypeNumeric</span>
-                <br/>
-                <span class="ignored-method-name">TestRegex</span>
-                <br/>
-                <span class="ignored-method-name">TestValidTestValue</span>
+                <span class="ignored-method-name">verifyUploadTemplateBlank</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">DataOutput_File.DataOutput</span>
+              <span class="ignored-class-name">Template_File.NoTemplateUpload</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestInvalidMapkey</span>
-                <br/>
-                <span class="ignored-method-name">TestNofilename</span>
-                <br/>
-                <span class="ignored-method-name">TestUploadNoFile</span>
-                <br/>
-                <span class="ignored-method-name">TestUploadInvalidFile</span>
-                <br/>
-                <span class="ignored-method-name">TestNoMapkey</span>
-                <br/>
-                <span class="ignored-method-name">TestUploadValidFile</span>
-                <br/>
-                <span class="ignored-method-name">TestValidMapkey</span>
-                <br/>
-                <span class="ignored-method-name">TestUploadFiveFile</span>
-                <br/>
-                <span class="ignored-method-name">TestValidfilename</span>
-                <br/>
-                <span class="ignored-method-name">TestUploadUniqueFile</span>
+                <span class="ignored-method-name">verifyNoTemplateUpload</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">QualityCheck_File.QualityCheck</span>
+              <span class="ignored-class-name">CP_QualityCheck.QC_QualityCheck</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestValidQC</span>
+                <span class="ignored-method-name">QC_TestVerify</span>
                 <br/>
-                <span class="ignored-method-name">TestValidQV</span>
+                <span class="ignored-method-name">QC_TestUpdate</span>
                 <br/>
-                <span class="ignored-method-name">TestNoQV</span>
+                <span class="ignored-method-name">QC_TestNoUpdate</span>
                 <br/>
-                <span class="ignored-method-name">TestValidQCQV</span>
-                <br/>
-                <span class="ignored-method-name">TestNoQC</span>
+                <span class="ignored-method-name">QC_TestViewLogs</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -593,31 +537,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">Service.DocumentCategory</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestValidTitle</span>
-                <br/>
                 <span class="ignored-method-name">TestInvalidTitle</span>
                 <br/>
                 <span class="ignored-method-name">TestNoTitle</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">CP_QualityCheck.QC_QualityCheck</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">QC_TestVerify</span>
-                <br/>
-                <span class="ignored-method-name">QC_TestUpdate</span>
-                <br/>
-                <span class="ignored-method-name">QC_TestNoUpdate</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">CP_QualityValidation.QV_QualityValidation</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">QV_TestNoUpdate</span>
-                <br/>
-                <span class="ignored-method-name">QV_TestUpdate</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -635,6 +557,88 @@ return data;
                 <span class="ignored-method-name">RegisterTest</span>
                 <br/>
                 <span class="ignored-method-name">TestPasswordPolicy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">DataOutput_File.DataOutput</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestInvalidMapkey</span>
+                <br/>
+                <span class="ignored-method-name">TestNofilename</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadNoFile</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadInvalidFile</span>
+                <br/>
+                <span class="ignored-method-name">TestNoMapkey</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadValidFile</span>
+                <br/>
+                <span class="ignored-method-name">TestValidMapkey</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadFiveFile</span>
+                <br/>
+                <span class="ignored-method-name">TestValidfilename</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadUniqueFile</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">QualityCheck_File.QualityCheck</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestValidQC</span>
+                <br/>
+                <span class="ignored-method-name">TestValidQV</span>
+                <br/>
+                <span class="ignored-method-name">TestNoQV</span>
+                <br/>
+                <span class="ignored-method-name">TestValidQCQV</span>
+                <br/>
+                <span class="ignored-method-name">TestNoQC</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Template_File.NoTemplateName</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyNoTemplateName</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Template_File.Regex</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestEdit</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">CP_QualityValidation.QV_QualityValidation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">QV_TestApproved</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestRejected</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestNoUpdate</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestViewLogs</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestUpdate</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Template_File.Template</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestValidUploadTemp</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadTempBlank</span>
+                <br/>
+                <span class="ignored-method-name">TestTempNameBlank</span>
+                <br/>
+                <span class="ignored-method-name">TestUploadTempFileBlank</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -656,75 +660,95 @@ return data;
               <div class="chronological-class-name">RBAC.CreateRole</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-start">89 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">RBAC.CreateUser</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">93 ms</span>
+                <span class="method-start">105 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Service.DocumentCategory</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">115 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TestValidTitle(chrome)</span>
+                <span class="method-start">144 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DataOutput_File.DataOutput</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">142 ms</span>
+                <span class="method-start">58280 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">QualityCheck_File.QualityCheck</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">165 ms</span>
+                <span class="method-start">58292 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CP_QualityCheck.QC_QualityCheck</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">217 ms</span>
+                <span class="method-start">58319 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CP_QualityValidation.QV_QualityValidation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">236 ms</span>
+                <span class="method-start">58342 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">QV_TestApproved(chrome)</span>
-                <span class="method-start">260 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">QV_TestRejected(chrome)</span>
-                <span class="method-start">23971 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Account.RegisterPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">46866 ms</span>
+                <span class="method-start">58367 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Template_File.Regex</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">46879 ms</span>
+                <span class="method-start">58418 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Template_File.NoTemplateName</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">58426 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Template_File.NoTemplateUpload</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">58454 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Template_File.Template</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">58494 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Template_File.UploadTemplateBlank</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">58514 ms</span>
               </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

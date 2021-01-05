@@ -62,7 +62,7 @@
     <class name="Service.DocumentCategory">
       <methods>
       <exclude name="TestNoTitle"/>
-      <exclude name="TestValidTitle"/>
+      <include name="TestValidTitle"/>
       <exclude name="TestInvalidTitle"/>
      </methods>
     </class>
@@ -110,6 +110,7 @@
       <exclude name="QC_TestNoUpdate"/>
       <exclude name="QC_TestUpdate"/>
       <exclude name="QC_TestVerify"/>
+      <exclude name="QC_TestViewLogs"/>
      </methods>
     </class>
    </classes>
@@ -121,8 +122,9 @@
       <methods>
       <exclude name="QV_TestNoUpdate"/>
       <exclude name="QV_TestUpdate"/>
-      <include name="QV_TestApproved"/>
-      <include name="QV_TestRejected"/>
+      <exclude name="QV_TestApproved"/>
+      <exclude name="QV_TestRejected"/>
+      <exclude name="QV_TestViewLogs"/>
      </methods>
     </class>
    </classes>
@@ -142,6 +144,7 @@
     </class>
    </classes>
   </test>
+  
   <test name="RegexTest">
     <classes>  
       <class name="Template_File.Regex">
@@ -162,5 +165,48 @@
       </methods>
       </class>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+  
+  <test name="NoTemplateNameTest">
+    <classes>  
+      <class name="Template_File.NoTemplateName">
+      <methods>
+      <exclude name="verifyNoTemplateName"/>
+      </methods>
+      </class>
+    </classes>
+  </test>
+  
+  <test name="NoTemplateUploadTest">
+    <classes>  
+      <class name="Template_File.NoTemplateUpload">
+      <methods>
+      <exclude name="verifyNoTemplateUpload"/>
+      </methods>
+      </class>
+    </classes>
+  </test>
+  
+  <test name="TemplateTest">
+    <classes>  
+      <class name="Template_File.Template">
+      <methods>
+      <exclude name="TestValidUploadTemp"/>
+      <exclude name="TestUploadTempBlank"/>
+      <exclude name="TestUploadTempFileBlank"/>
+      <exclude name="TestTempNameBlank"/>
+      </methods>
+      </class>
+    </classes>
+  </test>
+  
+  <test name="UploadTemplateBlankTest">
+    <classes>  
+      <class name="Template_File.UploadTemplateBlank">
+      <methods>
+      <exclude name="verifyUploadTemplateBlank"/>
+      </methods>
+      </class>
+    </classes>
+  </test><!-- Test -->
 </suite> <!-- Suite -->

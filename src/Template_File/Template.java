@@ -77,13 +77,13 @@ public class Template extends PropertiesFile
 	    System.out.println("Sucessfully updated the event"); 
 	}
 	
-	@Test(dataProvider="LoginData")
+	@Test(dataProvider="DataProvider")
 	public void TestValidUploadTemp(String browser) throws InterruptedException, AWTException
 	{
 		String username = "roohi@envirya.in";
     	String password = "Yaali@1421";
     	String processname = UUID.randomUUID().toString(); 
-    	StringSelection file_location = new StringSelection("C:\\Users\\tfrsln55\\Desktop\\Test1.pdf");
+    	StringSelection file_location = new StringSelection("E:\\ENVIRYA PROJECTS\\Test1.pdf");
     	String DocumentCategory ="InvoiceMaster";
     	String Language = "English";
     	String filetype = "System Generated Pdf";
@@ -97,7 +97,7 @@ public class Template extends PropertiesFile
         Thread.sleep(3000);
 		driver.quit();		
 	}	
-	@Test(dataProvider="LoginData")
+	@Test(dataProvider="DataProvider")
 	public void TestUploadTempBlank(String browser) throws InterruptedException
 	{
 		String username = "roohi@envirya.in";
@@ -112,7 +112,7 @@ public class Template extends PropertiesFile
 	    System.out.println(driver.findElement(By.xpath("//div[contains(text(),'Please create a template by uploading a template f')]")).getText());
 	    driver.quit();		
 	}
-	@Test(dataProvider="LoginData")
+	@Test(dataProvider="DataProvider")
 	public void TestUploadTempFileBlank(String browser) throws InterruptedException, AWTException
 	{
 		String username = "roohi@envirya.in";
@@ -129,13 +129,13 @@ public class Template extends PropertiesFile
 		Template.UploadTemplateFile(driver,file_location,DocumentCategory,Language,filetype,individualORcorporate);
 		driver.quit();		
 	}
-	@Test(dataProvider="LoginData")
+	@Test(dataProvider="DataProvider")
 	public void TestTempNameBlank(String browser) throws InterruptedException, AWTException
 	{
 		String username = "roohi@envirya.in";
     	String password = "Yaali@1421";
     	String processname = UUID.randomUUID().toString(); 
-    	StringSelection file_location = new StringSelection("C:\\Users\\tfrsln55\\Desktop\\Test1.pdf");
+    	StringSelection file_location = new StringSelection("E:\\ENVIRYA PROJECTS\\Test1.pdf");
     	String DocumentCategory ="InvoiceMaster";
     	String Language = "English";
     	String filetype = "System Generated Pdf";
