@@ -2,40 +2,32 @@
 <testng-results ignored="65" total="66" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-05T12:29:55 IST" name="EnviryaProjects" finished-at="2021-01-05T12:30:53 IST" duration-ms="58530">
+  <suite started-at="2021-01-05T14:54:48 IST" name="EnviryaProjects" finished-at="2021-01-05T14:55:21 IST" duration-ms="33629">
     <groups>
     </groups>
-    <test started-at="2021-01-05T12:29:55 IST" name="Login Test" finished-at="2021-01-05T12:29:55 IST" duration-ms="39">
+    <test started-at="2021-01-05T14:54:48 IST" name="Login Test" finished-at="2021-01-05T14:54:48 IST" duration-ms="37">
       <class name="Account.LoginPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.LoginPage@4470fbd6]" started-at="2021-01-05T12:29:55 IST" name="setUp" finished-at="2021-01-05T12:29:55 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.LoginPage@4470fbd6]" started-at="2021-01-05T14:54:48 IST" name="setUp" finished-at="2021-01-05T14:54:48 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Account.LoginPage -->
     </test> <!-- Login Test -->
-    <test started-at="2021-01-05T12:29:55 IST" name="Create Role Test" finished-at="2021-01-05T12:29:55 IST" duration-ms="4">
+    <test started-at="2021-01-05T14:54:48 IST" name="Create Role Test" finished-at="2021-01-05T14:54:48 IST" duration-ms="3">
       <class name="RBAC.CreateRole">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateRole@9cb8225]" started-at="2021-01-05T12:29:55 IST" name="setUp" finished-at="2021-01-05T12:29:55 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateRole@9cb8225]" started-at="2021-01-05T14:54:48 IST" name="setUp" finished-at="2021-01-05T14:54:48 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- RBAC.CreateRole -->
     </test> <!-- Create Role Test -->
-    <test started-at="2021-01-05T12:29:55 IST" name="Create User Test" finished-at="2021-01-05T12:29:55 IST" duration-ms="3">
+    <test started-at="2021-01-05T14:54:48 IST" name="Create User Test" finished-at="2021-01-05T14:55:21 IST" duration-ms="33198">
       <class name="RBAC.CreateUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateUser@3cce57c7]" started-at="2021-01-05T12:29:55 IST" name="setUp" finished-at="2021-01-05T12:29:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RBAC.CreateUser@1cf56a1c]" started-at="2021-01-05T14:54:48 IST" name="setUp" finished-at="2021-01-05T14:54:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-      </class> <!-- RBAC.CreateUser -->
-    </test> <!-- Create User Test -->
-    <test started-at="2021-01-05T12:29:55 IST" name="Document Category Test" finished-at="2021-01-05T12:30:53 IST" duration-ms="58159">
-      <class name="Service.DocumentCategory">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Service.DocumentCategory@4808bc9b]" started-at="2021-01-05T12:29:55 IST" name="setUp" finished-at="2021-01-05T12:29:55 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TestValidTitle(java.lang.String)[pri:0, instance:Service.DocumentCategory@4808bc9b]" started-at="2021-01-05T12:29:55 IST" name="TestValidTitle" data-provider="DataProvider" finished-at="2021-01-05T12:30:53 IST" duration-ms="58121" status="PASS">
+        <test-method signature="TestNoEmail(java.lang.String)[pri:0, instance:RBAC.CreateUser@1cf56a1c]" started-at="2021-01-05T14:54:48 IST" name="TestNoEmail" data-provider="DataProvider" finished-at="2021-01-05T14:55:21 IST" duration-ms="33156" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,84 +37,92 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestValidTitle -->
+        </test-method> <!-- TestNoEmail -->
+      </class> <!-- RBAC.CreateUser -->
+    </test> <!-- Create User Test -->
+    <test started-at="2021-01-05T14:55:21 IST" name="Document Category Test" finished-at="2021-01-05T14:55:21 IST" duration-ms="4">
+      <class name="Service.DocumentCategory">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Service.DocumentCategory@70e38ce1]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- Service.DocumentCategory -->
     </test> <!-- Document Category Test -->
-    <test started-at="2021-01-05T12:30:53 IST" name="Output Activity Test" finished-at="2021-01-05T12:30:53 IST" duration-ms="3">
+    <test started-at="2021-01-05T14:55:21 IST" name="Output Activity Test" finished-at="2021-01-05T14:55:21 IST" duration-ms="3">
       <class name="DataOutput_File.DataOutput">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:DataOutput_File.DataOutput@3cfdd820]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DataOutput_File.DataOutput@928763c]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- DataOutput_File.DataOutput -->
     </test> <!-- Output Activity Test -->
-    <test started-at="2021-01-05T12:30:53 IST" name="Quality Check Test" finished-at="2021-01-05T12:30:53 IST" duration-ms="2">
+    <test started-at="2021-01-05T14:55:21 IST" name="Quality Check Test" finished-at="2021-01-05T14:55:21 IST" duration-ms="3">
       <class name="QualityCheck_File.QualityCheck">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:QualityCheck_File.QualityCheck@5e17553a]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:QualityCheck_File.QualityCheck@3eb91815]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- QualityCheck_File.QualityCheck -->
     </test> <!-- Quality Check Test -->
-    <test started-at="2021-01-05T12:30:53 IST" name="QC Login Test" finished-at="2021-01-05T12:30:53 IST" duration-ms="3">
+    <test started-at="2021-01-05T14:55:21 IST" name="QC Login Test" finished-at="2021-01-05T14:55:21 IST" duration-ms="4">
       <class name="CP_QualityCheck.QC_QualityCheck">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CP_QualityCheck.QC_QualityCheck@14f232c4]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CP_QualityCheck.QC_QualityCheck@24c22fe]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- CP_QualityCheck.QC_QualityCheck -->
     </test> <!-- QC Login Test -->
-    <test started-at="2021-01-05T12:30:53 IST" name="QV Login Test" finished-at="2021-01-05T12:30:53 IST" duration-ms="3">
+    <test started-at="2021-01-05T14:55:21 IST" name="QV Login Test" finished-at="2021-01-05T14:55:21 IST" duration-ms="2">
       <class name="CP_QualityValidation.QV_QualityValidation">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CP_QualityValidation.QV_QualityValidation@205d38da]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CP_QualityValidation.QV_QualityValidation@6f3187b0]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- CP_QualityValidation.QV_QualityValidation -->
     </test> <!-- QV Login Test -->
-    <test started-at="2021-01-05T12:30:53 IST" name="Register Test" finished-at="2021-01-05T12:30:53 IST" duration-ms="2">
+    <test started-at="2021-01-05T14:55:21 IST" name="Register Test" finished-at="2021-01-05T14:55:21 IST" duration-ms="2">
       <class name="Account.RegisterPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.RegisterPage@72ef8d15]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Account.RegisterPage@51a9ad5e]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Account.RegisterPage -->
     </test> <!-- Register Test -->
-    <test started-at="2021-01-05T12:30:53 IST" name="RegexTest" finished-at="2021-01-05T12:30:53 IST" duration-ms="6">
+    <test started-at="2021-01-05T14:55:21 IST" name="RegexTest" finished-at="2021-01-05T14:55:21 IST" duration-ms="7">
       <class name="Template_File.Regex">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.Regex@37911f88]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.Regex@7f284218]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Template_File.Regex -->
     </test> <!-- RegexTest -->
-    <test started-at="2021-01-05T12:30:53 IST" name="NoTemplateNameTest" finished-at="2021-01-05T12:30:53 IST" duration-ms="2">
+    <test started-at="2021-01-05T14:55:21 IST" name="NoTemplateNameTest" finished-at="2021-01-05T14:55:21 IST" duration-ms="4">
       <class name="Template_File.NoTemplateName">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.NoTemplateName@4f4c4b1a]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.NoTemplateName@64e7619d]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Template_File.NoTemplateName -->
     </test> <!-- NoTemplateNameTest -->
-    <test started-at="2021-01-05T12:30:53 IST" name="NoTemplateUploadTest" finished-at="2021-01-05T12:30:53 IST" duration-ms="6">
+    <test started-at="2021-01-05T14:55:21 IST" name="NoTemplateUploadTest" finished-at="2021-01-05T14:55:21 IST" duration-ms="4">
       <class name="Template_File.NoTemplateUpload">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.NoTemplateUpload@4e928fbf]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.NoTemplateUpload@2e32ccc5]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Template_File.NoTemplateUpload -->
     </test> <!-- NoTemplateUploadTest -->
-    <test started-at="2021-01-05T12:30:53 IST" name="TemplateTest" finished-at="2021-01-05T12:30:53 IST" duration-ms="1">
+    <test started-at="2021-01-05T14:55:21 IST" name="TemplateTest" finished-at="2021-01-05T14:55:21 IST" duration-ms="3">
       <class name="Template_File.Template">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.Template@5456afaa]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.Template@589da3f3]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- Template_File.Template -->
     </test> <!-- TemplateTest -->
-    <test started-at="2021-01-05T12:30:53 IST" name="UploadTemplateBlankTest" finished-at="2021-01-05T12:30:53 IST" duration-ms="2">
+    <test started-at="2021-01-05T14:55:21 IST" name="UploadTemplateBlankTest" finished-at="2021-01-05T14:55:21 IST" duration-ms="4">
       <class name="Template_File.UploadTemplateBlank">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.UploadTemplateBlank@1cb346ea]" started-at="2021-01-05T12:30:53 IST" name="setUp" finished-at="2021-01-05T12:30:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Template_File.UploadTemplateBlank@4d518b32]" started-at="2021-01-05T14:55:21 IST" name="setUp" finished-at="2021-01-05T14:55:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->

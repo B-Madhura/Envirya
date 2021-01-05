@@ -37,6 +37,17 @@ public class CreateUser extends PropertiesFile {
 	    driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
 	}
 	
+	public static void AssignRoles(WebDriver driver) throws InterruptedException
+	{
+	   List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
+	   for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
+	   ListOfCheckBoxes.get(i).click(); 
+       }
+	  Thread.sleep(5000);
+	  driver.findElement(By.xpath("//button[@type='submit']")).click();
+	  Thread.sleep(3000);
+   }
+	
 	@Test(dataProvider="DataProvider")
 	public void TestNoEmail(String browser) throws InterruptedException 
 	{	
@@ -51,13 +62,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-		    ListOfCheckBoxes.get(i).click(); 
-         }
-		 Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(3000);
+		AssignRoles(driver);
 	    String Expected_tooltip ="Please fill out this field.";
     	Assert.assertEquals("Please fill out this field.", Expected_tooltip);
     	System.out.println("Test Passed-Please fill out this field: Email");
@@ -78,13 +83,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-		    ListOfCheckBoxes.get(i).click(); 
-         }
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(3000);
+		AssignRoles(driver);
 	    String Expected_tooltip ="Please fill out this field.";
     	Assert.assertEquals("Please fill out this field.", Expected_tooltip);
     	System.out.println("Test Passed-Please fill out this field: Password");
@@ -105,13 +104,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-		    ListOfCheckBoxes.get(i).click(); 
-         }
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(3000);
+		AssignRoles(driver);
 	    String Expected_tooltip ="Please fill out this field.";
     	Assert.assertEquals("Please fill out this field.", Expected_tooltip);
     	System.out.println("Test Passed-Please fill out this field: Confirm Password");
@@ -151,13 +144,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-			 if(i==2)
-		    ListOfCheckBoxes.get(i).click();
-       }
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		AssignRoles(driver);
 		String Expected_error = driver.findElement(By.xpath("//div[contains(text(),'Invalid email address')]")).getText();
     	Assert.assertEquals("Invalid email address", Expected_error);
     	System.out.println("Test Passed-Invalid email address");
@@ -180,13 +167,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-			 if(i==2)
-		    ListOfCheckBoxes.get(i).click();
-       }
-		 Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		AssignRoles(driver);
 		// Error should be : User already exist with the given email
 		Thread.sleep(3000);
     	driver.quit();
@@ -206,13 +187,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-			 if(i==2)
-		    ListOfCheckBoxes.get(i).click();
-       }
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		AssignRoles(driver);
 		String Expected_error = driver.findElement(By.xpath("//div[contains(text(),'Password must contain a lowercase letter, uppercas')]")).getText();
     	Assert.assertEquals("Password must contain a lowercase letter, uppercase letter , a number and a special character!!", Expected_error);
     	System.out.println("Test Passed-Invalid Password");
@@ -234,14 +209,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-			 if(i==2)
-		    ListOfCheckBoxes.get(i).click();
-       }
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		
+		AssignRoles(driver);
 		String Expected_error = driver.findElement(By.xpath("//div[contains(text(),'Wrong confirmation password!!')]")).getText();
 		Assert.assertEquals("Wrong confirmation password!!", Expected_error);
 		System.out.println("Test Passed-Invalid Confirm Password");
@@ -266,13 +234,7 @@ public class CreateUser extends PropertiesFile {
 		LoginPage.login(driver,username,password, rememberMe);
 		user(driver,email,password1,confirmpassword);
 		Thread.sleep(5000);
-		List<WebElement> ListOfCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		 for(int i=0; i< ListOfCheckBoxes.size() ; i++) {
-			 if(i==2)
-		    ListOfCheckBoxes.get(i).click();
-       }
-		 Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		AssignRoles(driver);
 		Thread.sleep(3000);
     	driver.quit();
 	}

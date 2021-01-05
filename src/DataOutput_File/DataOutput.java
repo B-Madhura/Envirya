@@ -137,7 +137,17 @@ public class DataOutput extends PropertiesFile{
 	        driver.findElement(By.xpath(p.getProperty("TestFileSubmit"))).click();
 	        Thread.sleep(3000);
 	 }
-	 
+	 public static void ConfirmOutput(WebDriver driver, String FileName) throws InterruptedException
+	 {
+	        driver.findElement(By.xpath(p.getProperty("OutputFile"))).click();
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath(p.getProperty("FileName"))).sendKeys(FileName);
+	        Thread.sleep(3000);
+	        driver.findElement(By.xpath(p.getProperty("OutputTestButton"))).click();
+	        Thread.sleep(5000);
+	        driver.findElement(By.xpath(p.getProperty("ConfirmOutput"))).click();
+	        Thread.sleep(3000);
+	 }
 	@Test(dataProvider="DataProvider")
 	public void TestNofilename(String browser) throws InterruptedException, AWTException
 	{

@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-EnviryaProjects">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EnviryaProjects" title="Service.DocumentCategory" class="method navigator-link" hash-for-method="TestValidTitle(chrome)">TestValidTitle(chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-EnviryaProjects" title="RBAC.CreateUser" class="method navigator-link" hash-for-method="TestNoEmail(chrome)">TestNoEmail(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-EnviryaProjects -->
@@ -122,14 +122,14 @@
           <div class="suite-EnviryaProjects-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Service.DocumentCategory</span>
+              <span class="class-name">RBAC.CreateUser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestValidTitle(chrome)">
-                  </a> <!-- TestValidTitle(chrome) -->
-                  <span class="method-name">TestValidTitle</span>
+                  <a name="TestNoEmail(chrome)">
+                  </a> <!-- TestNoEmail(chrome) -->
+                  <span class="method-name">TestNoEmail</span>
                   <span class="parameters">(chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -180,7 +180,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;RBAC.CreateUser&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;TestNoEmail&quot;/&gt;
+          &lt;include name=&quot;TestNoEmail&quot;/&gt;
           &lt;exclude name=&quot;TestNoPassword&quot;/&gt;
           &lt;exclude name=&quot;TestNoConfirmPassword&quot;/&gt;
           &lt;exclude name=&quot;TestNoRole&quot;/&gt;
@@ -202,8 +202,8 @@
     &lt;classes&gt;
       &lt;class name=&quot;Service.DocumentCategory&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TestValidTitle&quot;/&gt;
           &lt;exclude name=&quot;TestNoTitle&quot;/&gt;
+          &lt;exclude name=&quot;TestValidTitle&quot;/&gt;
           &lt;exclude name=&quot;TestInvalidTitle&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Service.DocumentCategory --&gt;
@@ -417,14 +417,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestValidTitle')
-data.setCell(0, 2, 'Service.DocumentCategory')
-data.setCell(0, 3, 58121);
+data.setCell(0, 1, 'TestNoEmail')
+data.setCell(0, 2, 'RBAC.CreateUser')
+data.setCell(0, 3, 33156);
 window.suiteTableData['EnviryaProjects']= { tableData: data, tableDiv: 'times-div-EnviryaProjects'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-EnviryaProjects">
               </div> <!-- times-div-EnviryaProjects -->
             </div> <!-- times-div -->
@@ -457,22 +457,48 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Template_File.NoTemplateUpload</span>
+              <span class="ignored-class-name">CP_QualityValidation.QV_QualityValidation</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyNoTemplateUpload</span>
+                <span class="ignored-method-name">QV_TestApproved</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestRejected</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestNoUpdate</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestViewLogs</span>
+                <br/>
+                <span class="ignored-method-name">QV_TestUpdate</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">CP_QualityCheck.QC_QualityCheck</span>
+              <span class="ignored-class-name">Template_File.Regex</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">QC_TestVerify</span>
+                <span class="ignored-method-name">TestEdit</span>
                 <br/>
-                <span class="ignored-method-name">QC_TestUpdate</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Template_File.NoTemplateName</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyNoTemplateName</span>
                 <br/>
-                <span class="ignored-method-name">QC_TestNoUpdate</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Account.RegisterPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestNoPassword</span>
                 <br/>
-                <span class="ignored-method-name">QC_TestViewLogs</span>
+                <span class="ignored-method-name">TestPasswordMatch</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidEmail</span>
+                <br/>
+                <span class="ignored-method-name">TestNoEmail</span>
+                <br/>
+                <span class="ignored-method-name">RegisterTest</span>
+                <br/>
+                <span class="ignored-method-name">TestPasswordPolicy</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -502,6 +528,32 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">QualityCheck_File.QualityCheck</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestValidQC</span>
+                <br/>
+                <span class="ignored-method-name">TestValidQV</span>
+                <br/>
+                <span class="ignored-method-name">TestNoQV</span>
+                <br/>
+                <span class="ignored-method-name">TestValidQCQV</span>
+                <br/>
+                <span class="ignored-method-name">TestNoQC</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Service.DocumentCategory</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestValidTitle</span>
+                <br/>
+                <span class="ignored-method-name">TestInvalidTitle</span>
+                <br/>
+                <span class="ignored-method-name">TestNoTitle</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">RBAC.CreateUser</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TestInvalidEmail</span>
@@ -518,8 +570,6 @@ return data;
                 <br/>
                 <span class="ignored-method-name">EditUserInvalidPassword</span>
                 <br/>
-                <span class="ignored-method-name">TestNoEmail</span>
-                <br/>
                 <span class="ignored-method-name">EditUserValid</span>
                 <br/>
                 <span class="ignored-method-name">EditUserNoConfirmPassword</span>
@@ -535,28 +585,15 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Service.DocumentCategory</span>
+              <span class="ignored-class-name">CP_QualityCheck.QC_QualityCheck</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestInvalidTitle</span>
+                <span class="ignored-method-name">QC_TestVerify</span>
                 <br/>
-                <span class="ignored-method-name">TestNoTitle</span>
+                <span class="ignored-method-name">QC_TestUpdate</span>
                 <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Account.RegisterPage</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestNoPassword</span>
+                <span class="ignored-method-name">QC_TestNoUpdate</span>
                 <br/>
-                <span class="ignored-method-name">TestPasswordMatch</span>
-                <br/>
-                <span class="ignored-method-name">TestInvalidEmail</span>
-                <br/>
-                <span class="ignored-method-name">TestNoEmail</span>
-                <br/>
-                <span class="ignored-method-name">RegisterTest</span>
-                <br/>
-                <span class="ignored-method-name">TestPasswordPolicy</span>
+                <span class="ignored-method-name">QC_TestViewLogs</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -586,50 +623,6 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">QualityCheck_File.QualityCheck</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestValidQC</span>
-                <br/>
-                <span class="ignored-method-name">TestValidQV</span>
-                <br/>
-                <span class="ignored-method-name">TestNoQV</span>
-                <br/>
-                <span class="ignored-method-name">TestValidQCQV</span>
-                <br/>
-                <span class="ignored-method-name">TestNoQC</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Template_File.NoTemplateName</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyNoTemplateName</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Template_File.Regex</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestEdit</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">CP_QualityValidation.QV_QualityValidation</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">QV_TestApproved</span>
-                <br/>
-                <span class="ignored-method-name">QV_TestRejected</span>
-                <br/>
-                <span class="ignored-method-name">QV_TestNoUpdate</span>
-                <br/>
-                <span class="ignored-method-name">QV_TestViewLogs</span>
-                <br/>
-                <span class="ignored-method-name">QV_TestUpdate</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">Template_File.Template</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TestValidUploadTemp</span>
@@ -639,6 +632,13 @@ return data;
                 <span class="ignored-method-name">TestTempNameBlank</span>
                 <br/>
                 <span class="ignored-method-name">TestUploadTempFileBlank</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Template_File.NoTemplateUpload</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyNoTemplateUpload</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -660,95 +660,95 @@ return data;
               <div class="chronological-class-name">RBAC.CreateRole</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">89 ms</span>
+                <span class="method-start">86 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">RBAC.CreateUser</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">105 ms</span>
+                <span class="method-start">97 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TestNoEmail(chrome)</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Service.DocumentCategory</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">33339 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">TestValidTitle(chrome)</span>
-                <span class="method-start">144 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DataOutput_File.DataOutput</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58280 ms</span>
+                <span class="method-start">33349 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">QualityCheck_File.QualityCheck</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58292 ms</span>
+                <span class="method-start">33358 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CP_QualityCheck.QC_QualityCheck</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58319 ms</span>
+                <span class="method-start">33395 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CP_QualityValidation.QV_QualityValidation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58342 ms</span>
+                <span class="method-start">33425 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Account.RegisterPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58367 ms</span>
+                <span class="method-start">33444 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Template_File.Regex</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58418 ms</span>
+                <span class="method-start">33495 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Template_File.NoTemplateName</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58426 ms</span>
+                <span class="method-start">33515 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Template_File.NoTemplateUpload</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58454 ms</span>
+                <span class="method-start">33539 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Template_File.Template</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58494 ms</span>
+                <span class="method-start">33591 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Template_File.UploadTemplateBlank</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58514 ms</span>
+                <span class="method-start">33613 ms</span>
               </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
