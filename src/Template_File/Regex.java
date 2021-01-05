@@ -1,6 +1,8 @@
 package Template_File;
 
 import java.awt.AWTException;
+import java.util.UUID;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import Account.LoginPage;
-import Process.CreateProcess;
+//import Process.CreateProcess;
+import Process_File.Process;
 import Template_File.Template;
 import config.PropertiesFile;
 
@@ -463,9 +466,10 @@ public class Regex extends PropertiesFile
 	    String NumChar ="8"; 
 	    String CharType = "Number";
     	String TestValue ="20AP3ZI8";
+    	String processname = UUID.randomUUID().toString();
     	WebDriver driver = createBrowser(browser);
 		LoginPage.login(driver, username, password, false);
-    	CreateProcess.Processcreation(driver);
+		Process.CreateProcess(driver,processname);
 		Template.UploadTemplateFile(driver, null, DocumentCategory,Language, filetype,  individualORcorporate);
 		Edit( driver, TempName, FieldName, AliasName);
 		AddFormat(driver,SampleValue);
