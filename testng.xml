@@ -189,7 +189,7 @@
       <exclude name="QV_TestNoUpdate"/>
       <exclude name="QV_TestUpdate"/>
       <exclude name="QV_TestApproved"/>
-      <exclude name="QV_TestRejected"/>
+      <include name="QV_TestRejected"/>
       <exclude name="QV_TestViewLogs"/>
      </methods>
     </class>
