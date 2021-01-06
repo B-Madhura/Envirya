@@ -14,7 +14,6 @@ public class Process extends PropertiesFile
 {
 	public static void CreateProcess(WebDriver driver,String processname) throws InterruptedException
 	{   
-		//driver.findElement(By.xpath(p.getProperty("CreateProcess"))).click();
 		Thread.sleep(3000);
 		String pageTitle = driver.getTitle();
 		System.out.println("The title of the page is - " +pageTitle);
@@ -22,14 +21,15 @@ public class Process extends PropertiesFile
         Thread.sleep(3000);  		    
 	    driver.findElement(By.xpath(p.getProperty("ProcessName"))).sendKeys(processname);
         System.out.println("Enter Process Name :- " +processname);
+        driver.findElement(By.xpath("//button[contains(text(),'Create process')]")).click();
         Thread.sleep(5000); 
 	} 
 	
-	@Test(dataProvider="LoginData")
+	@Test(dataProvider="DataProvider")
 	public void TestValidProcessName(String browser) throws InterruptedException
 	{
-		String username = "roohi@envirya.in";
-    	String password = "Yaali@1421";
+		String username = "madhura@envirya.in";
+    	String password = "Test@123";
     	String processname = UUID.randomUUID().toString(); 
     	WebDriver driver = createBrowser(browser);		
 		LoginPage.login(driver, username, password, false);
@@ -37,27 +37,27 @@ public class Process extends PropertiesFile
 		Thread.sleep(2000);
 		driver.quit();
 	}	
-	@Test(dataProvider="LoginData")
+	@Test(dataProvider="DataProvider")
 	public void TestBlankProcessName(String browser) throws InterruptedException, AWTException
      {
-		String username = "roohi@envirya.in";
-    	String password = "Yaali@1421";
-    	String processname = "";
+		String username = "madhura@envirya.in";
+    	String password = "Test@123";
+    	String processname = ""; 
     	WebDriver driver = createBrowser(browser);		
 		LoginPage.login(driver, username, password, false);
 		CreateProcess(driver,processname);
-        driver.findElement(By.xpath(p.getProperty("createTemplate"))).click();
-        Thread.sleep(5000);
+		Thread.sleep(2000);
+		driver.quit();
         Assert.assertEquals("Enter process name first",driver.findElement(By.xpath("//body/div[@id='root']/div[3]/div[1]/div[1]")).getText());
         System.out.println(driver.findElement(By.xpath("//body/div[@id='root']/div[3]/div[1]/div[1]")).getText());
         driver.quit();
      }
-	@Test(dataProvider="LoginData")
+	@Test(dataProvider="DataProvider")
 	public void TestDupProcessName(String browser) throws InterruptedException
 	{
-		String username = "roohi@envirya.in";
-    	String password = "Yaali@1421";
-    	String processname ="Test8"; 
+		String username = "madhura@envirya.in";
+    	String password = "Test@123";
+    	String processname ="Process"; 
     	WebDriver driver = createBrowser(browser);		
 		LoginPage.login(driver, username, password, false);
 		Process.CreateProcess(driver,processname);

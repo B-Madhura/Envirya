@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataOutput_File.DataOutput">
+      <class name="Process_File.Process">
         <methods>
-          <include name="TestValidFileMapkey" invocation-numbers="0"/>
+          <include name="TestBlankProcessName" invocation-numbers="0"/>
+          <include name="TestDupProcessName" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- DataOutput_File.DataOutput -->
+      </class> <!-- Process_File.Process -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

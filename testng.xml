@@ -1,241 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Envirya Project">
-  <test name="LoginTest">
-   <classes>
-    <class name="Account.LoginPage">
-     <methods>
-      <exclude name="TestLogin"/>
-      <exclude name="TestInvalidEmail"/>
-      <exclude name="TestInvalidPassword"/>
-      <exclude name="TestNoEmail"/>
-      <exclude name="TestNoPassword"/>
-     </methods>
-    </class>
-   </classes>
-  </test> 
-  <test name="RegisterTest">
-   <classes>
-    <class name="Account.RegisterPage">
-     <methods>
-      <exclude name="RegisterTest"/>
-      <exclude name="TestInvalidEmail"/>
-      <exclude name="TestNoEmail"/>
-      <exclude name="TestNoPassword"/>
-      <exclude name="TestPasswordMatch"/>
-      <exclude name="TestPasswordPolicy"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="ProcessTest">
-   <classes>
-    <class name="Process_File.Process">
-     <methods>
-      <exclude name="TestValidProcessName"/>
-      <exclude name="TestBlankProcessName"/>
-      <exclude name="TestDupProcessName"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="RegexTest">
-    <classes>  
-      <class name="Template_File.Regex">
-      <methods>
-      <exclude name="TestFNEmpty"/>
-      <exclude name="TestAliasName"/>
-      <exclude name="TestSampleValueEmpty"/>
-      <exclude name="TestSampleInput"/>
-      <exclude name="TestCharacterTypeAlphabet"/>
-      <exclude name="TestCharacterTypeNumeric"/>
-      <exclude name="TestCharacterTypeMixed"/>
-      <exclude name="TestTestValueBlank"/>
-      <exclude name="TestFinishError"/>
-      <exclude name="TestInvalidTestValue"/>
-      <exclude name="TestValidTestValue"/>
-      <exclude name="TestRegex"/>
-      <exclude name="TestEdit"/>
-      </methods>
-       </class>
-    </classes>
-  </test>
-  <test name="DocumentCategory">
-   <classes>
-    <class name="Template_File.Template">
-    <methods>
-    <exclude name="TestInvoiceMaster"/>
-    <exclude name="TestLanguageIM"/>
-    <exclude name="TestMedicalMaster"/>
-    <exclude name="TestLanguageMM"/>
-    </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="SystemGeneratedPDF">
-   <classes>
-    <class name="Template_File.Template">
-     <methods>
-     <exclude name="TestValidUploadTemp"/>
-     <exclude name="TestUploadTempBlank"/>
-     <exclude name="TestUploadTempFileBlank"/>
-     <exclude name="TestSystemGeneratedIM"/>
-     <exclude name="TestSystemGeneratedMM"/>
-     <exclude name="TestSystemFileType"/>
-     <exclude name="TestSystemLanguage"/>
-     <exclude name="TestSystemUploadTemplate"/>
-     <exclude name="TestSystemCreateTemp"/>
-     <exclude name="TestSystemTempNameBlank"/>
-     <exclude name="TestSystemExtractTable"/>
-     <exclude name="TestSystemViewResult"/>
-     <exclude name="TestSystemSaveTemp"/>
-     <exclude name="TestSystemPublishTemp"/>
-     <exclude name="TestSystemSaveTempFile"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="ScannedPDF">
+ <test name="Login Test">
   <classes>
-   <class name="Template_File.Template">
+   <class name="Account.LoginPage">
     <methods>
-    <exclude name="TestScannedPDFMM"/>
-    <exclude name="TestScannedPDFIM"/>
-    <exclude name="TestScannedFileType"/>
-    <exclude name="TestScannedLanguage"/>
-    <exclude name="TestScannedUploadTemplate"/>
-    <exclude name="TestScannedCreateTemp"/>
-    <exclude name="TestScannedTempNameBlank"/>
-    <exclude name="TestScannedViewResult"/>
-    <exclude name="TestScannedSaveTemp"/>
-    <exclude name="TestScannedPublishTemp"/>
-    <exclude name="TestScannedSaveTempFiile"/>
+     <exclude name="TestLogin"/>
+     <exclude name="TestInvalidEmail"/>
+     <exclude name="TestInvalidPassword"/>
+     <exclude name="TestNoEmail"/>
+     <exclude name="TestNoPassword"/>
     </methods>
    </class>
   </classes>
-  </test>
-  <test name="ConflictingValues">
-   <classes>
-    <class name="Template_File.Template">
-     <methods>
-     <exclude name="TestIdentifyValue"/>
-     <exclude name="TestIdentifytemplatevalue"/>
-     <exclude name="TestProximity"/>
-     <exclude name="TestCustomValues"/>
-     <exclude name="TestConfirmConflict"/>
-     <exclude name="TestConflictResult"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="DocumentCategoryTest">
-   <classes>
-    <class name="Service.DocumentCategory">
-     <methods>
-      <exclude name="TestNoTitle"/>
-      <exclude name="TestValidTitle"/>
-      <exclude name="TestInvalidTitle"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="OutputActivityTest">
-   <classes>
-    <class name="DataOutput_File.DataOutput">
-     <methods>
-      <include name="TestNofilename"/>
-      <exclude name="TestValidfilename"/>
-      <exclude name="TestNoMapkey"/>
-      <exclude name="TestValidMapkey"/>
-      <exclude name="TestInvalidMapkey"/>
-      <exclude name="TestUploadNoFile"/>
-      <exclude name="TestUploadInvalidFile"/>
-      <exclude name="TestUploadValidFile"/>
-      <exclude name="TestUploadUniqueFile"/>
-      <exclude name="TestUploadFiveFile"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="QualityCheckTest">
-   <classes>
-    <class name="QualityCheck_File.QualityCheck">
-     <methods>
-      <exclude name="TestNoQC"/>
-      <exclude name="TestNoQV"/>
-      <exclude name="TestValidQC"/>
-      <exclude name="TestValidQV"/>
-      <exclude name="TestValidQCQV"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="QCLoginTest">
-   <classes>
-    <class name="CP_QualityCheck.QC_QualityCheck">
-     <methods>
-      <exclude name="QC_TestNoUpdate"/>
-      <exclude name="QC_TestUpdate"/>
-      <exclude name="QC_TestVerify"/>
-      <exclude name="QC_TestViewLogs"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="QVLoginTest">
-   <classes>
-    <class name="CP_QualityValidation.QV_QualityValidation">
-     <methods>
-      <exclude name="QV_TestNoUpdate"/>
-      <exclude name="QV_TestUpdate"/>
-      <exclude name="QV_TestApproved"/>
-      <include name="QV_TestRejected"/>
-      <exclude name="QV_TestViewLogs"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="CreateRoleTest">
-   <classes>
-    <class name="RBAC.CreateRole">
-     <methods>
-      <exclude name="TestValidRole"/>
-      <exclude name="TestNoRoleName"/>
-      <exclude name="TestNoRoleDescription"/>
-      <exclude name="TestNoRoleResource"/>
-      <exclude name="TestNoRoleAction"/>
-      <exclude name="TestInvalidRole"/>
-      <exclude name="EditRoleValid"/>
-      <exclude name="EditRoleName"/>
-      <exclude name="EditRoleDescription"/>
-      <exclude name="EditRoleExists"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
-  <test name="CreateUserTest">
-   <classes>
-    <class name="RBAC.CreateUser">
-     <methods>
-      <exclude name="TestNoEmail"/>
-      <exclude name="TestNoPassword"/>
-      <exclude name="TestNoConfirmPassword"/>
-      <exclude name="TestNoRole"/>
-      <exclude name="TestInvalidEmail"/>
-      <exclude name="TestAlreadyExistsEmail"/>
-      <exclude name="TestInvalidPassword"/>
-      <exclude name="TestInvalidConfirmPassword"/>
-      <exclude name="TestValidUser"/>
-      <exclude name="EditUserNoPassword"/>
-      <exclude name="EditUserNoConfirmPassword"/>
-      <exclude name="EditUserInvalidPassword"/>
-      <exclude name="EditUserInvalidConfirmPassword"/>
-      <exclude name="EditUserValid"/>
-     </methods>
-    </class>
-   </classes>
-  </test>
+ </test>
+ 
+ <test name="Register Test">
+  <classes>
+   <class name="Account.RegisterPage">
+    <methods>
+     <exclude name="RegisterTest"/>
+     <exclude name="TestInvalidEmail"/>
+     <exclude name="TestNoEmail"/>
+     <exclude name="TestNoPassword"/>
+     <exclude name="TestPasswordMatch"/>
+     <exclude name="TestPasswordPolicy"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+ 
+ <test name="QV Login Test">
+  <classes>
+   <class name="CP_QualityValidation.QV_QualityValidation">
+    <methods>
+     <exclude name="QV_TestNoUpdate"/>
+     <exclude name="QV_TestUpdate"/>
+     <exclude name="QV_TestApproved"/>
+     <exclude name="QV_TestRejected"/>
+     <exclude name="QV_TestViewLogs"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+
+ <test name="QC Login Test">
+  <classes>
+   <class name="CP_QualityCheck.QC_QualityCheck">
+    <methods>
+     <exclude name="QC_TestNoUpdate"/>
+     <exclude name="QC_TestUpdate"/>
+     <exclude name="QC_TestVerify"/>
+     <exclude name="QC_TestViewLogs"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+
+ <test name="Quality Check Test">
+  <classes>
+   <class name="QualityCheck_File.QualityCheck">
+    <methods>
+     <exclude name="TestNoQC"/>
+     <exclude name="TestNoQV"/>
+     <exclude name="TestValidQC"/>
+     <exclude name="TestValidQV"/>
+     <exclude name="TestValidQCQV"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+
+ <test name="Output Activity Test">
+  <classes>
+   <class name="DataOutput_File.DataOutput">
+    <methods>
+     <exclude name="TestNofilename"/>
+     <exclude name="TestValidfilename"/>
+     <exclude name="TestNoMapkey"/>
+     <exclude name="TestValidMapkey"/>
+     <exclude name="TestInvalidMapkey"/>
+     <exclude name="TestUploadNoFile"/>
+     <exclude name="TestUploadInvalidFile"/>
+     <exclude name="TestUploadValidFile"/>
+     <exclude name="TestUploadUniqueFile"/>
+     <exclude name="TestUploadFiveFile"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+
+ <test name="Document Category Test">
+  <classes>
+   <class name="Service.DocumentCategory">
+    <methods>
+     <exclude name="TestNoTitle"/>
+     <exclude name="TestValidTitle"/>
+     <exclude name="TestInvalidTitle"/>
+     <exclude name="TestValidEnviryaOCR"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+
+ <test name="Create User Test">
+  <classes>
+   <class name="RBAC.CreateUser">
+    <methods>
+     <exclude name="TestNoEmail"/>
+     <exclude name="TestNoPassword"/>
+     <exclude name="TestNoConfirmPassword"/>
+     <exclude name="TestNoRole"/>
+     <exclude name="TestInvalidEmail"/>
+     <exclude name="TestAlreadyExistsEmail"/>
+     <exclude name="TestInvalidPassword"/>
+     <exclude name="TestInvalidConfirmPassword"/>
+     <exclude name="TestValidUser"/>
+     <exclude name="EditUserNoPassword"/>
+     <exclude name="EditUserNoConfirmPassword"/>
+     <exclude name="EditUserInvalidPassword"/>
+     <exclude name="EditUserInvalidConfirmPassword"/>
+     <exclude name="EditUserValid"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+
+ <test name="Create Role Test">
+  <classes>
+   <class name="RBAC.CreateRole">
+    <methods>
+     <exclude name="TestValidRole"/>
+     <exclude name="TestNoRoleName"/>
+     <exclude name="TestNoRoleDescription"/>
+     <exclude name="TestNoRoleResource"/>
+     <exclude name="TestNoRoleAction"/>
+     <exclude name="TestInvalidRole"/>
+     <exclude name="EditRoleValid"/>
+     <exclude name="EditRoleName"/>
+     <exclude name="EditRoleDescription"/>
+     <exclude name="EditRoleExists"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+ 
+ <test name="DateSourceTest">
+  <classes>
+   <class name="DataSource_File.DataSource">
+    <methods>
+     <exclude name="TestValidDataSource"/>
+     <include name="TestValidDataSourceBlank"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+
+ <test name="OCRTest">
+  <classes>
+   <class name="OCR_File.OCR">
+    <methods>
+     <exclude name="TestEnviryaOCR"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
 </suite> <!-- Suite -->
-
-
-

@@ -1,12 +1,12 @@
 package Template_File;
 
 import java.awt.AWTException;
+import java.util.List;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.util.UUID;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -75,6 +75,30 @@ public class Template extends PropertiesFile
 
 	    driver.findElement(By.xpath("//div[contains(text(),'Save Template')]")).click();
 	    System.out.println("Sucessfully updated the event"); 
+	}
+	
+	public static void TemplateOption(WebDriver driver) throws InterruptedException
+	{
+		driver.findElement(By.xpath("//div[contains(text(),'Next Activity')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(p.getProperty("TemplateOption"))).click();
+        Thread.sleep(3000);
+	}
+	public static void ChooseTemplate(WebDriver driver) throws InterruptedException
+	{
+		driver.findElement(By.xpath("//body/div[@id='root']/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/*[1]")).click();
+        Thread.sleep(5000);
+	}
+	public static void SelectTemplate(WebDriver driver) throws InterruptedException
+	{
+		driver.findElement(By.xpath(p.getProperty("SelectTemplate"))).sendKeys("de");
+		Thread.sleep(5000);
+		List<WebElement> options =driver.findElements(By.xpath("//LI[@id='combo-box-demo-option-0']"));
+    	for(WebElement option :options){
+    		if(option.getText().equalsIgnoreCase("demo")){
+    	     option.click();  
+	         }
+    	}
 	}
 	
 	@Test(dataProvider="DataProvider")

@@ -25,13 +25,14 @@ public class DataOutput extends PropertiesFile{
 	
 	public static void OutputData(WebDriver driver) throws InterruptedException
 	{ 
-		driver.findElement(By.xpath("//button[contains(text(),'Create process')]")).click();
+		//driver.findElement(By.xpath("//button[contains(text(),'Create process')]")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//div[contains(text(),'Next Activity')]")).click();
 		driver.findElement(By.xpath("//div[contains(text(),'Template')]")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//body/div[@id='root']/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/*[1]")).click();
-        Thread.sleep(3000);
+		//driver.findElement(By.xpath("//body/div[@id='root']/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/*[1]")).click();
+		driver.findElement(By.xpath(p.getProperty("uploadTemplate1"))).click();
+		Thread.sleep(3000);
         driver.findElement(By.xpath(p.getProperty("SelectTemplate"))).sendKeys("de");
         Thread.sleep(3000);        
         List<WebElement> options =driver.findElements(By.xpath("//LI[@id='combo-box-demo-option-0']"));
